@@ -8,7 +8,14 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header__logo"></div>
-        <nav class="page-header__menu"></nav>
+        <nav class="page-header__menu main-menu">
+          <ul class="main-menu__items">
+            <a href="#" class="main-menu__item"></a>
+            <a href="#" class="main-menu__item"></a>
+            <a href="#" class="main-menu__item"></a>
+            <a href="#" class="main-menu__item"></a>
+          </ul>
+        </nav>
         <section class="promo">
           <h1 class="page-header__caption"></h1>
           <div class="promo__list"></div>
@@ -87,5 +94,21 @@
         <a href="#" class="copyright__link"></a>
       </div>
     </footer>
+    <div class="modal-add-cart">
+      <div class="modal-add-cart__caption"></div>
+      <p class="modal-add-cart__text"></p>
+      <form class="modal-add-cart__size-form size-form">
+        <label class="size-form__label">
+          <input class="size-form_item" type="radio" name="size" value="">
+        </label>
+        <label class="size-form__label">
+          <input class="size-form_item" type="radio" name="size" value="">
+        </label>
+        <label class="size-form__label">
+          <input class="size-form_item" type="radio" name="size" value="">
+        </label>
+        <button type="submit" name="add-cart"></button>
+      </form>
+    </div>
   </body>
 </html>
