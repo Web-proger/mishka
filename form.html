@@ -23,7 +23,85 @@
     </header>
 
     <main class="main-content container">
-
+      <div class="order-form-description"> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+      </div>
+      <section class="order-block">
+        <form class="order-form">
+          <fieldset class="order-form_block order-type">
+            <legend class="order-f">Тип</legend>
+            <label>
+              <input class="order-type__item" type="radio" name="order-type" checked>
+              Аксессуар для интерьера
+            </label>
+            <label>
+              <input class="order-type__item" type="radio" name="order-type">
+              Детская игрушка
+            </label>
+          </fieldset>
+          <fieldset class="order-form_block order-color">
+            <legend class="order-f">Цвет</legend>
+            <label>
+              <input class="order-color__item" type="checkbox" name="name" checked>
+              Белый
+            </label>
+            <label>
+              <input class="order-color__item" type="checkbox" name="name" checked>
+              Серый
+            </label>
+            <label>
+              <input class="order-color__item" type="checkbox" name="name">
+              «Тиффани»
+            </label>
+            <label>
+              <input class="order-color__item" type="checkbox" name="name">
+              Черный
+            </label>
+            <label>
+              <input class="order-color__item" type="checkbox" name="name">
+              Розовый
+            </label>
+            <label>
+              <input class="order-color__item" type="checkbox" name="name">
+              Оранжевый
+            </label>
+          </fieldset>
+          <fieldset class="order-form_block order-full-name">
+            <legend class="order-f">ФИО</legend>
+            <label>
+              Имя:
+              <input type="text" class="order-full-name__item" placeholder="Введите ваше имя*">
+            </label>
+            <label>
+              Фамилия:
+              <input type="text" class="order-full-name__item" placeholder="Укажите фамилию">
+            </label>
+            <label>
+              Отчество
+              <input type="text" class="order-full-name__item" placeholder="Отчество, если желаете">
+            </label>
+          </fieldset>
+          <fieldset class="order-form_block order-phone">
+            <legend class="order-f">Тел</legend>
+            <label>
+              <input class="order-phone__item" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+            </label>
+          </fieldset>
+          <fieldset class="order-form_block order-email">
+            <legend class="order-f">E-mail</legend>
+            <label>
+              <input class="order-email__item" type="email" name="mail" placeholder="Ваш Email*">
+            </label>
+          </fieldset>
+          <fieldset class="order-form_block order-additionally">
+            <legend class="order-f">Доп</legend>
+            <label>
+              <textarea class="order-additionally__item" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </label>
+          </fieldset>
+          <p class="order-form__note">*Поля обязательны для заполнения</p>
+          <button class="order-form__btn" type="submit">Отправить заказ</button>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer container">
