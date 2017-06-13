@@ -1,0 +1,5 @@
+.inner-page-header {
+  &__caption {
+    @include main-caption;
+  }
+}
