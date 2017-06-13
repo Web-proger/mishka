@@ -1,3 +1,31 @@
-body {
-  background-color: green;
-}
+@import "variables";
+@import "fonts";
+@import "mixin";
+@import "buttons";
+@import "global";
+
+@import "blocks/about";
+@import "blocks/catalog-item";
+@import "blocks/contacts";
+@import "blocks/copyright";
+@import "blocks/goods-week";
+@import "blocks/inner-page-header";
+@import "blocks/main-content";
+@import "blocks/main-menu";
+@import "blocks/main-page-header";
+@import "blocks/modal-add-cart";
+@import "blocks/order-additionally";
+@import "blocks/order-block";
+@import "blocks/order-color";
+@import "blocks/order-email";
+@import "blocks/order-form";
+@import "blocks/order-full-name";
+@import "blocks/order-phone";
+@import "blocks/order-type";
+@import "blocks/page-footer";
+@import "blocks/product-parametr";
+@import "blocks/production-block";
+@import "blocks/promo";
+@import "blocks/reviews";
+@import "blocks/size-form";
+@import "blocks/social";
