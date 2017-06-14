@@ -1,0 +1,28 @@
+.goods-week {
+  font-family: 'Open Sans', sans-serif;
+  &__name {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #000000;
+  }
+  &__subject {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #63d1bb;
+  }
+  &__description {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #444444;
+  }
+}
+
+.product-parametr {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #444444;
+}
