@@ -7,8 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="inner-page-header">
-      <div class="container">
+    <header class="inner-page-header container">
         <div class="main-page-heade__top">
           <a class="main-page-header__logo" href="index.html">
             <img src="http://placehold.it/86x35/44eeab/112233">
@@ -32,15 +31,14 @@
           </ul>
         </nav>
         <h1 class="inner-page-header__caption">Вязание на заказ</h1>
-      </div>
     </header>
 
     <main class="main-content container">
       <div class="main-content__form-description"> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </div>
-      <section class="order">
-        <form class="order-form">
-          <fieldset class="order-form_block">
+      <section class="order-form">
+        <form class="order-form__tag-form">
+          <fieldset class="order-form__block">
             <legend class="order-form__legend">Тип</legend>
             <label class="order-form__label">
               <input class="order-form__selection-type" type="radio" name="order-type" checked>
@@ -51,7 +49,7 @@
               Детская игрушка
             </label>
           </fieldset>
-          <fieldset class="order-form_block">
+          <fieldset class="order-form__block">
             <legend class="order-form__legend">Цвет</legend>
             <label class="order-form__label">
               <input class="order-form__selection-color" type="checkbox" name="color" checked>
@@ -78,7 +76,7 @@
               Оранжевый
             </label>
           </fieldset>
-          <fieldset class="order-form_block">
+          <fieldset class="order-form__block">
             <legend class="order-form__legend">ФИО</legend>
             <label class="order-form__label">
               Имя:
@@ -93,19 +91,19 @@
               <input type="text" class="order-form__input-full-name" placeholder="Отчество, если желаете">
             </label>
           </fieldset>
-          <fieldset class="order-form_block">
+          <fieldset class="order-form__block">
             <legend class="order-form__legend">Тел</legend>
             <label class="order-form__label">
               <input class="order-form__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
             </label>
           </fieldset>
-          <fieldset class="order-form_block">
+          <fieldset class="order-form__block">
             <legend class="order-form__legend">E-mail</legend>
             <label class="order-form__label">
               <input class="order-form__input-email" type="email" name="mail" placeholder="Ваш Email*">
             </label>
           </fieldset>
-          <fieldset class="order-form_block">
+          <fieldset class="order-form__block">
             <legend class="order-form__legend">Доп</legend>
             <label class="order-form__label">
               <textarea class="order-form__input-wish" placeholder="Опишите все ваши пожелания к заказу"></textarea>
