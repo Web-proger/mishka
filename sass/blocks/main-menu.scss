@@ -1,0 +1,17 @@
+.main-menu {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: green;
+  &__items {
+    list-style: none;
+  }
+  &__item {
+
+  }
+  &__item-link {
+    color: #000000;
+    text-decoration: none;
+  }
+}
