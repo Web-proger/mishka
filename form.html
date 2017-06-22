@@ -8,19 +8,19 @@
   </head>
   <body>
     <header class="inner-page-header container">
-        <div class="main-page-heade__top">
+        <div class="main-page-header__top">
           <a class="main-page-header__logo" href="index.html">
             <img src="http://placehold.it/86x35/44eeab/112233">
           </a>
-          <button class="main-menu__btn">Меню</button>
         </div>
         <nav class="inner-page-header__menu main-menu">
+          <button class="main-menu__btn">Меню</button>
           <ul class="main-menu__items">
             <li class="main-menu__item">
               <a class="main-menu__item-link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__item-link" href="#">Вязание на заказ</a>
+              <a class="main-menu__item-link main-menu__item-link--active">Вязание на заказ</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__item-link" href="#">Поиск по сайту</a>
@@ -80,27 +80,27 @@
             <legend class="order-form__legend">ФИО</legend>
             <label class="order-form__label">
               Имя:
-              <input type="text" class="order-form__input-full-name" placeholder="Введите ваше имя*">
+              <input type="text" class="order-form__input-full-name" placeholder="Введите ваше имя*" required>
             </label>
             <label class="order-form__label">
               Фамилия:
-              <input type="text" class="order-form__input-full-name" placeholder="Укажите фамилию">
+              <input type="text" class="order-form__input-full-name" placeholder="Укажите фамилию" required>
             </label>
             <label class="order-form__label">
               Отчество
-              <input type="text" class="order-form__input-full-name" placeholder="Отчество, если желаете">
+              <input type="text" class="order-form__input-full-name" placeholder="Отчество, если желаете" required>
             </label>
           </fieldset>
           <fieldset class="order-form__block">
             <legend class="order-form__legend">Тел</legend>
             <label class="order-form__label">
-              <input class="order-form__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+              <input class="order-form__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
             </label>
           </fieldset>
           <fieldset class="order-form__block">
             <legend class="order-form__legend">E-mail</legend>
             <label class="order-form__label">
-              <input class="order-form__input-email" type="email" name="mail" placeholder="Ваш Email*">
+              <input class="order-form__input-email" type="email" name="mail" placeholder="Ваш Email*" required>
             </label>
           </fieldset>
           <fieldset class="order-form__block">
