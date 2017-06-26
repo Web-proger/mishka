@@ -1,11 +1,15 @@
 .main-page-header {
+  padding: 22px 0;
+  &__flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  }
   &__logo img{
-    padding-top: 22px;
-    padding-bottom: 22px;
     text-align: center;
   }
   &__caption {
     @include main-caption;
   }
 }
+
 

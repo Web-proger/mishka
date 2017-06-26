@@ -5,7 +5,13 @@
   font-weight: 700;
   color: #000000;
   &__items {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
     list-style: none;
+  }
+  &__items--mob-hidden {
+    display: none;
   }
   &__item {
 
@@ -14,4 +20,27 @@
     color: #000000;
     text-decoration: none;
   }
+}
+
+@media #{$tablet-width} {
+  .main-menu {
+    font-size: 15px;
+    color: #000000;
+    &__items {
+      flex-direction: row;
+    }
+    &__items--mob-hidden {
+      display: block;
+    }
+    &__item {
+
+    }
+    &__item-link {
+
+    }
+  }
+}
+
+@media #{$desctop-width} {
+
 }

@@ -1,6 +1,7 @@
-.catalog-item {
+.production {
+  display: flex;
+  flex-direction: column;
   font-family: 'Open Sans', sans-serif;
-  color: #000000;
   &__caption {
   font-size: 17px;
   line-height: 24px;
@@ -10,18 +11,23 @@
     color: #000000;
     text-decoration: none;
   }
-  &__size {
+  &__description {
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
   color: #444444;
   }
-  &__price {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
-  }
-  &__cart {
+}
 
+@media #{$tablet-width} {
+  .production {
+    &__video-img {
+      width: 100%;
+      height: auto;
+    }
   }
+}
+
+@media #{$desctop-width} {
+
 }

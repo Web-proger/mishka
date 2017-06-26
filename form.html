@@ -7,15 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="inner-page-header container">
+    <header class="inner-page-header">
+      <div class="container inner-page-header__flex-wrap">
         <div class="main-page-header__top">
           <a class="main-page-header__logo" href="index.html">
-            <img src="http://placehold.it/86x35/44eeab/112233">
+            <img src="img/logo-mobile.svg" alt="Логотип">
           </a>
         </div>
         <nav class="inner-page-header__menu main-menu">
           <button class="main-menu__btn">Меню</button>
-          <ul class="main-menu__items">
+          <ul class="main-menu__items main-menu__items--mob-hidden">
             <li class="main-menu__item">
               <a class="main-menu__item-link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -30,7 +31,8 @@
             </li>
           </ul>
         </nav>
-        <h1 class="inner-page-header__caption">Вязание на заказ</h1>
+      </div>
+      <h1 class="inner-page-header__caption">Вязание на заказ</h1>
     </header>
 
     <main class="main-content container">
@@ -115,15 +117,20 @@
       </section>
     </main>
 
-    <footer class="page-footer container">
-      <div class="page-footer__social">
-        <a href="#" class="page-footer__social-item page-footer__social-item--ico-inst">insagram</a>
-        <a href="#" class="page-footer__social-item page-footer__social-item--ico-fb">facebook</a>
-        <a href="#" class="page-footer__social-item page-footer__social-item--ico-tw">twitter</a>
-      </div>
-      <div class="page-footer__copyright">
-        <span>Разработано</span>
-        <a href="#" class="page-footer__copyright-link">Логотип разработчика</a>
+    <footer class="page-footer">
+      <div class="container">
+        <a class="page-footer__logo visually-hidden">
+          <img src="img/logo-mobile.svg" alt="Логотип">
+        </a>
+        <div class="page-footer__social">
+          <a href="#" class="page-footer__social-item page-footer__social-item--ico-inst">insagram</a>
+          <a href="#" class="page-footer__social-item page-footer__social-item--ico-fb">facebook</a>
+          <a href="#" class="page-footer__social-item page-footer__social-item--ico-tw">twitter</a>
+        </div>
+        <div class="page-footer__copyright">
+          <span>Разработано</span>
+          <a href="#" class="page-footer__copyright-link">Логотип разработчика</a>
+        </div>
       </div>
     </footer>
   </body>

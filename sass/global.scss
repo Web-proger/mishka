@@ -2,15 +2,41 @@
   width: 260px;
   margin: 0 auto;
   background-color: #f0e0fd;
+  padding: 0 30px;
 }
 
-.main-content,
+/*.main-content,
 .main-page-header,
 .inner-page-header,
 .page-footer  {
   padding: 30px;
-}
+}*/
 
 header, main, footer {
   outline: 1px solid red;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/*img {
+  width: 100%;
+  height: auto;
+}*/
+
+//Планшет
+@media #{$tablet-width} {
+  .container {
+    width: 668px;
+    padding: 0 50px;
+  }
+  .visually-hidden {
+  display: block;
+  }
+}
+
+//Десктоп
+@media #{$desctop-width} {
+
 }

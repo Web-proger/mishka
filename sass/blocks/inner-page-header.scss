@@ -1,4 +1,12 @@
 .inner-page-header {
+  padding: 22px 0;
+  &__flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  }
+  &__logo img{
+    text-align: center;
+  }
   &__caption {
     @include main-caption;
   }
