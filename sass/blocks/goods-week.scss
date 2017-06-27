@@ -1,4 +1,5 @@
 .goods-week {
+  @include container;
   font-family: 'Open Sans', sans-serif;
   &__name {
     font-size: 25px;
@@ -21,13 +22,32 @@
   &__price {
     font-size: 17px;
     line-height: 24px;
+    font-weight: 700;
     color: #444444;
+  }
+  &__caption {
+    @include main-caption;
   }
 }
 
-.product-parametr {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
-  color: #444444;
+
+@media #{$tablet-width} {
+  .goods-week {
+    &__subject {
+      line-height: 17px;
+    }
+    &__description {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    &__price {
+      font-size: 20px;
+    }
+  }
+}
+
+@media #{$desctop-width} {
+  .goods-week {
+
+  }
 }

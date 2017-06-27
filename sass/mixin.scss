@@ -5,4 +5,24 @@
   font-weight: bold;
   color: #000000;
   text-align: center;
+  @media #{$tablet-width} {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  @media #{$desctop-width} {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+}
+
+@mixin container() {
+  margin: 0 auto;
+  width: 320px;
+  @media #{$tablet-width} {
+    width: 768px;
+  }
+  @media #{$desctop-width} {
+    width: 1150px;
+  }
 }

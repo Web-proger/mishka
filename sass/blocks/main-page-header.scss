@@ -1,4 +1,5 @@
 .main-page-header {
+  @include container;
   padding: 22px 0;
   &__flex-wrap {
   display: flex;
@@ -6,9 +7,6 @@
   }
   &__logo img{
     text-align: center;
-  }
-  &__caption {
-    @include main-caption;
   }
 }
 
