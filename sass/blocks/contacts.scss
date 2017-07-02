@@ -6,13 +6,13 @@
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
-    color: #000000;
+    color: $main-color;
   }
   &__table {
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
-    color: #444444;
+    color: $second-color;
   }
   &__map {
     margin-left: -30px;

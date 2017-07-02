@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: 'Open Sans', sans-serif;
-  color: #000000;
+  color: $main-color;
   &__item {
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
   font-weight: 700;
   }
   &__caption-name {
-    color: #000000;
+    color: $main-color;
     text-decoration: none;
   }
   &__description {
@@ -39,7 +39,7 @@
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
-  color: #444444;
+  color: $second-color;
   }
   &__price {
   font-size: 15px;
@@ -75,6 +75,7 @@
 @media #{$desctop-width} {
   .catalog {
     flex-direction: row;
+    justify-content: space-between;
     &__item {
       flex-direction: column;
       width: 315px;

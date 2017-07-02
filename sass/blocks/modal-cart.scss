@@ -5,20 +5,20 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
-  color: #000000;
+  color: $main-color;
   }
   &__text {
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  color: #444444;
+  color: $second-color;
   }
   &__form {
   font-family: 'Open Sans', sans-serif;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-  color: #444444;
+  color: $second-color;
   }
   &__label {
 

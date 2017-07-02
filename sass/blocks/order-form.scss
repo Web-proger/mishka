@@ -4,7 +4,7 @@
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
-    color: #444444;
+    color: $second-color;
   }
   &__block {
     display: flex;
@@ -30,13 +30,13 @@
     font-size: 17px;
     line-height: 18px;
     font-weight: 700;
-    color: #000000;
+    color: $main-color;
   }
   &__note {
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
-    color: #444444;
+    color: $second-color;
   }
 }
 

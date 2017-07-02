@@ -3,7 +3,7 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
+  color: $main-color;
   &__items {
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
 
   }
   &__item-link {
-    color: #000000;
+    color: $main-color;
     text-decoration: none;
   }
 }
@@ -25,7 +25,7 @@
 @media #{$tablet-width} {
   .main-menu {
     font-size: 15px;
-    color: #000000;
+    color: $main-color;
     &__items {
       flex-direction: row;
     }
