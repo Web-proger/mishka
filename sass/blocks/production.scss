@@ -1,8 +1,11 @@
 .production {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
   &__caption {
+  position: absolute;
+  top: 10px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -13,21 +16,40 @@
   }
   &__description {
   font-size: 13px;
-  line-height: 30px;
+  line-height: 24px;
   font-weight: 400;
   color: #444444;
+  }
+  &__video {
+    padding-top: 96px;
   }
 }
 
 @media #{$tablet-width} {
   .production {
-    &__video-img {
-      width: 100%;
-      height: auto;
+    &__video {
+      padding-top: 0;
+    }
+    &__caption {
+      position: static;
+    }
+    &__caption-name {
+      font-size: 20px;
+    }
+    &__description {
+    font-size: 15px;
+    line-height: 30px;
     }
   }
 }
 
 @media #{$desctop-width} {
+  .production {
+  flex-direction: row;
+  &__block-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  }
 
 }

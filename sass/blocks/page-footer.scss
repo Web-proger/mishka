@@ -4,6 +4,9 @@
   flex-direction: column;
   font-family: 'Open Sans', sans-serif;
   background-color: #f1f1f1;
+  &__logo--mob-hidden {
+    display: none;
+  }
   &__copyright span {
     font-size: 19px;
     line-height: 18px;
@@ -14,6 +17,9 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
+    &__logo--mob-hidden {
+      display: flex;
+    }
   }
 }
 

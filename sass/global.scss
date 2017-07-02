@@ -2,6 +2,8 @@
   width: 320px;
   margin: 0 auto;
   background-color: #f0e0fd;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /*.main-content,
@@ -27,6 +29,8 @@ img {
 @media #{$tablet-width} {
   .container {
     width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .visually-hidden {
   display: block;
