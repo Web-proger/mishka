@@ -4,7 +4,6 @@
   line-height: 30px;
   font-weight: bold;
   color: $main-color;
-  text-align: center;
   @media #{$tablet-width} {
     font-size: 43px;
     line-height: 50px;
@@ -13,7 +12,6 @@
     font-size: 53px;
     line-height: 57px;
   }
-
 }
 
 @mixin container() {
@@ -24,5 +22,14 @@
   }
   @media #{$desctop-width} {
     width: 1150px;
+  }
+}
+
+@mixin adapive-padding() {
+  padding-left: 30px;
+  padding-right: 30px;
+  @media #{$tablet-width} {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
