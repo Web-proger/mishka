@@ -11,12 +11,13 @@
   &__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
     outline: 1px solid green; //Временно
     width: 100%;
     display: flex;
   }
   &__caption {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -50,18 +51,18 @@
 @media #{$tablet-width} {
   .catalog {
     &__item {
-      min-height: 334px;
+      min-height: 335px;
       flex-direction: row;
     }
-
     &__caption-name {
       font-size: 20px;
     }
-
     &__size {
       font-size: 15px;
     }
-
+    &__buy {
+      margin-top: auto;
+    }
     &__price {
       font-size: 17px;
     }
