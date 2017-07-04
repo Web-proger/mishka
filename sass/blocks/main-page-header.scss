@@ -1,6 +1,7 @@
 .main-page-header {
   @include container;
   padding: 22px 0;
+  background-color: $bg-color;
   &__flex-wrap {
   display: flex;
   justify-content: space-between;
@@ -9,5 +10,3 @@
     text-align: center;
   }
 }
-
-

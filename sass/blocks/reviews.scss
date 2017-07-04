@@ -1,5 +1,6 @@
 .reviews {
   @include container;
+  @include adapive-padding;
   font-family: 'Open Sans', sans-serif;
   line-height: 30px;
 
@@ -19,5 +20,8 @@
    &__email {
     font-size: 17px;
     color: $second-color;
+   }
+   &__text {
+    margin: 0;
    }
 }

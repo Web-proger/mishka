@@ -1,8 +1,8 @@
 .about {
   @include container;
+  @include adapive-padding;
   &__caption {
     @include main-caption;
-    padding: 0 30px;
   }
 
   &__item {

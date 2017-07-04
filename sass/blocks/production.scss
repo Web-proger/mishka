@@ -1,4 +1,6 @@
 .production {
+  @include container;
+  @include adapive-padding;
   position: relative;
   display: flex;
   flex-direction: column;

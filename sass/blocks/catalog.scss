@@ -1,6 +1,7 @@
 .catalog {
   outline: 1px solid blue; //Временно
   @include container;
+  @include adapive-padding;
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
@@ -29,11 +30,6 @@
     flex-direction: column;
     flex-grow: 1;
     padding: 28px;
-  }
-  &__buy {
-    display: flex;
-    justify-content: space-between;
-    margin-top: auto;
   }
   &__size {
   font-size: 13px;
@@ -79,6 +75,9 @@
     &__item {
       flex-direction: column;
       width: 315px;
+    }
+    &__buy {
+    margin-top: auto;
     }
   }
 }

@@ -1,5 +1,6 @@
 .goods-week {
   @include container;
+  @include adapive-padding;
   font-family: 'Open Sans', sans-serif;
   &__name {
     font-size: 25px;
