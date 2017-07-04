@@ -1,19 +1,9 @@
-//box-sizing: border box для всех элементов
+//box-sizing: border-box для всех элементов
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-
-.container {
-  width: 320px;
-  margin: 0 auto;
-  background-color: #f0e0fd;
-}
-
-
-
 
 
 header, main, footer {
