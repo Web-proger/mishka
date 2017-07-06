@@ -31,7 +31,9 @@
     padding-top: 96px;
   }
   &__order-btn {
+    margin-left: 30px;
     margin-bottom: 35px;
+    width: 200px;
   }
 }
 
@@ -41,8 +43,8 @@
       padding-top: 0;
     }
     &__caption {
-      padding-left: 55px;
       position: static;
+      padding-left: 105px;
     }
     &__caption-name {
       font-size: 20px;
@@ -50,17 +52,37 @@
     &__description {
     font-size: 15px;
     line-height: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+    &__order-btn {
+      width: 580px;
     }
   }
 }
 
 @media #{$desctop-width} {
   .production {
-  flex-direction: row;
-  &__block-wrap {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    &__caption {
+      padding-left: 0;
+    }
+    &__video {
+      width: 682px;
+    }
+    &__block-wrap {
+      width: 482px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 80px;
+      padding-right: 55px;
+    }
+    &__order-btn {
+      margin-left: 0;
+      width: 230px;
+    }
+    &__description {
+      padding: 0;
+    }
   }
-  }
-
 }

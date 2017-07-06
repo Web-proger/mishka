@@ -1,5 +1,6 @@
 .main-page-header {
   @include container;
+  @include adapive-padding;
   padding: 22px 0;
   background-color: $bg-color;
   &__flex-wrap {
