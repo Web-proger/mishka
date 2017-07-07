@@ -1,7 +1,8 @@
 .inner-page-header {
   @include container;
   @include adapive-padding;
-  padding: 22px 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
   &__flex-wrap {
   display: flex;
   justify-content: space-between;

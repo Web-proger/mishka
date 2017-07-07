@@ -1,5 +1,6 @@
 .order-form {
   @include container;
+  @include adapive-padding;
   &__description {
     font-size: 13px;
     line-height: 24px;
@@ -7,11 +8,14 @@
     color: $second-color;
   }
   &__block {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-top: 25px;
-
+    padding-top: 45px;
+    padding-bottom: 45px;
+    outline: 1px solid grey;
   }
   &__tag-form {
     font-family: 'Open Sans', sans-serif;
@@ -42,12 +46,39 @@
 
 @media #{$tablet-width} {
   .order-form {
-
+    &__block {
+      padding-left: 167px;
+    }
+    &__block--bg-color {
+      background-color: $bg-color;
+    }
+    &__block--flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    &__block--flex label{
+      width: 250px;
+    }
+    &__block--length input {
+      width: 100%;
+    }
+    &__label {
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+    &__legend {
+      left: 0;
+      top: 65px;
+    }
   }
 }
 
 @media #{$desctop-width} {
   .order-form {
-
+    &__block {
+      padding-left: 175px;
+    }
   }
 }

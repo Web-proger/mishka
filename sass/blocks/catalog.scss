@@ -61,6 +61,8 @@
       font-size: 15px;
     }
     &__buy {
+      display: flex;
+      justify-content: space-between;
       margin-top: auto;
     }
     &__price {
