@@ -22,6 +22,7 @@
 
 @media #{$mobile-width-only} {
   .page-header {
+      position: relative;
     &__menu-btn {
       position: absolute;
       width: 20px;
@@ -69,5 +70,10 @@
           display: none;
       }
     }
+  }
+
+// Стили описываю поведение из другого блока
+  .page-header__menu-btn--opened main-menu {
+    display: block;
   }
 }
