@@ -5,20 +5,26 @@
   font-weight: 700;
   color: $main-color;
   &__items {
+    @include padding-margin-0;
     display: flex;
     flex-direction: column;
-    padding-left: 0;
     list-style: none;
   }
-  &__items--mob-hidden {
-    display: none;
-  }
   &__item {
-
+      padding: 27px 0 27px 45px;
   }
   &__item-link {
     color: $main-color;
     text-decoration: none;
+  }
+}
+
+@media #{$mobile-width-only} {
+  .main-menu {
+    display: none;
+    &--no-js {
+      display: block;
+    }
   }
 }
 
@@ -28,9 +34,6 @@
     color: $main-color;
     &__items {
       flex-direction: row;
-    }
-    &__items--mob-hidden {
-      display: block;
     }
     &__item {
       font-size: 15px;
