@@ -5,6 +5,7 @@
   font-weight: bold;
   color: $main-color;
   text-align: center;
+  background-color: $bg-color;
   @media #{$tablet-width} {
     font-size: 43px;
     line-height: 50px;
