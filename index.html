@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
   </head>
   <body>
     <header class="page-header">
+      <h1 class="visually-hidden">Вязаные игрушки и корзинки ручной работы, для вашего дома</h1>
       <div class="page-header__flex-wrap">
         <div class="page-header__top">
           <button class="page-header__menu-btn page-header__menu-btn--closed page-header__menu-btn--no-js">Меню</button>
@@ -50,18 +51,17 @@
         </nav>
       </div>
 
-      <h1 class="page-header__caption">Каталог товаров</h1>
     </header>
 
     <main class="main-content">
       <section class="promo">
-        <h1 class="promo__caption">Милые штуки ручной работы для дома</h1>
+        <h2 class="promo__caption">Милые штуки ручной работы для дома</h2>
         <a class="promo__list" href="#"><span>Предметы интерьера</span></a>
         <a class="promo__list promo__list--color" href="#"><span>Детские игрушки</span></a>
       </section>
       <section class="goods-week">
-        <h2 class="goods-week__name">Вязаные корзинки</h2>
-        <h3 class="goods-week__subject">Товар недели</h3>
+        <h3 class="goods-week__name">Вязаные корзинки</h3>
+        <div class="goods-week__subject">Товар недели</div>
         <p class="goods-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="goods-week__parameters product-parameter">
           <tr>
@@ -84,7 +84,7 @@
         <a class="goods-week__order btn" id="popup-open" href="#">Заказать</a>
       </section>
       <section class="about">
-        <h2 class="about__caption">Коротко о нас:</h2>
+        <h3 class="about__caption">Коротко о нас:</h3>
         <ul class="about__items">
           <li class="about__item about__item--ico-flower">Экологически чистые материалы</li>
           <li class="about__item about__item--ico-money">Скандинавский стиль по российской цене</li>
@@ -95,7 +95,7 @@
         </ul>
       </section>
       <section class="reviews">
-        <h2 class="reviews__caption">Отзывы</h2>
+        <h3 class="reviews__caption">Отзывы</h3>
         <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
         <div class="reviews__autor">Анастасия Красильникова</div>
         <div class="reviews__email">@misssssiskras</div>
@@ -125,8 +125,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="">
-        <a class="page-footer__logo visually-hidden">
+        <a class="page-footer__logo page-footer__logo--mob-hidden">
           <img src="img/logo-mobile.svg" alt="Логотип">
         </a>
         <div class="page-footer__social">
@@ -138,7 +137,6 @@
           <span>Разработано</span>
           <a href="#" class="page-footer__copyright-link">Логотип разработчика</a>
         </div>
-      </div>
     </footer>
     <div class="modal-cart">
       <div class="modal-cart__caption">Добавить в корзину</div>
