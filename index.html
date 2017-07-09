@@ -8,21 +8,26 @@
   </head>
   <body>
     <header class="page-header">
-      <div class=" page-header__flex-wrap">
+      <div class="page-header__flex-wrap">
         <div class="page-header__top">
+          <button class="page-header__menu-btn page-header__menu-btn--closed page-header__menu-btn--no-js">Меню</button>
           <a class="page-header__logo">
             <img src="img/logo-mobile.svg" alt="Логотип">
           </a>
         </div>
-        <nav class="page-header__menu main-menu">
-          <button class="main-menu__btn">Меню</button>
-          <ul class="main-menu__items main-menu__items--no-js">
+        <nav class="main-menu main-menu--no-js">
+          <ul class="main-menu__items">
             <li class="main-menu__item">
               <a class="main-menu__item-link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__item-link" href="form.html">Вязание на заказ</a>
             </li>
+            <li class="main-menu__item main-menu__item--mob-hidden">
+              <a class="main-menu__item-link" href="#">Бесплатная доставка по России</a>
+            </li>
+          </ul>
+          <ul class="main-menu__user-items">
             <li class="main-menu__item">
               <a class="main-menu__item-link" href="#">Поиск по сайту</a>
             </li>
@@ -30,8 +35,21 @@
               <a class="main-menu__item-link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
+          <ul class="main-menu__bottom-items">
+            <li class="main-menu__bottom-item">
+              <a class="main-menu__item-link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-menu__bottom-item">
+              <a class="main-menu__item-link" href="#">Распродажа</a>
+            </li>
+            <li class="main-menu__bottom-item">
+              <a class="main-menu__item-link" href="#">Бесплатная доставка по России</a>
+            </li>
+          </ul>
         </nav>
       </div>
+
+      <h1 class="page-header__caption">Каталог товаров</h1>
     </header>
 
     <main class="main-content">
@@ -137,5 +155,6 @@
         <button class="btn btn--popup-cart" type="submit" name="add-cart">Добавить</button>
       </form>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
