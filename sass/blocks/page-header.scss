@@ -3,24 +3,32 @@
   @include adapive-padding;
   padding-top: 22px;
   padding-bottom: 22px;
-  background-color: $bg-color;
 /*  &__flex-wrap {
   display: flex;
   justify-content: space-between;
   }*/
   &__top {
-    position: relative;
     display: block;
-  }
-  &__logo img{
     text-align: center;
+  }
+  &__logo {
+    display: inline-block;
   }
   &__caption {
   @include main-caption;
   }
+  &__menu-btn {
+    &--no-js { //js выключен
+      display: none;
+    }
+  }
 }
 
 @media #{$mobile-width-only} {
+  .page-header__top {
+    position: relative;
+  }
+//Кнопка меню с ключенным и выключенным JS и стилизация кнопки
   .page-header {
       position: relative;
     &__menu-btn {
@@ -32,48 +40,70 @@
       font-size: 0;
       border: none;
       &--closed { //js включен, меню закрыто
-          &::before {
-            content: "";
-            position: absolute;
-            top: 4px;
-            left: 0;
-            height: 2px;
-            width: 20px;
-            background-color: #000000;
-            box-shadow: 0 6px #000000,
-                        0 12px #000000;
-          }
+        &::before {
+          content: "";
+          position: absolute;
+          top: 4px;
+          left: 0;
+          height: 2px;
+          width: 20px;
+          background-color: #000000;
+          box-shadow: 0 6px #000000,
+                      0 12px #000000;
+        }
       }
       &--opened { //js включен, меню открыто
-          &::before {
-            content: "";
-            position: absolute;
-            top: 9px;
-            left: 0;
-            height: 2px;
-            width: 20px;
-            background-color: #000000;
-            transform: rotate(45deg);
-          }
-          &::after {
-            content: "";
-            position: absolute;
-            top: 9px;
-            left: 0;
-            height: 2px;
-            width: 20px;
-            background-color: #000000;
-            transform: rotate(-45deg);
-          }
-      }
-      &--no-js { //js выключен
-          display: none;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 9px;
+          left: 0;
+          height: 2px;
+          width: 20px;
+          background-color: #000000;
+          transform: rotate(45deg);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 9px;
+          left: 0;
+          height: 2px;
+          width: 20px;
+          background-color: #000000;
+          transform: rotate(-45deg);
+        }
       }
     }
   }
+}
 
-// Стили описываю поведение из другого блока
-  .page-header__menu-btn--opened main-menu {
-    display: block;
+@media #{$tablet-width} {
+  .page-header {
+    &__menu-btn {
+      display: none;
+    }
+    &__flex-wrap {
+      position: relative;
+      padding-top: 56px;
+    }
+    &__logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media #{$desctop-width} {
+  .page-header {
+    &__flex-wrap {
+      padding-top: 0;
+    }
+    &__logo {
+      position: absolute;
+      top: 25px;
+      left: 485px;
+    }
   }
 }
