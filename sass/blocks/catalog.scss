@@ -11,16 +11,16 @@
   &__item {
     display: flex;
     flex-direction: column;
-    outline: 1px solid green; //Временно
     width: 100%;
-    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid $bg-color;
   }
   &__caption {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
   }
   &__caption-name {
     color: $main-color;
@@ -33,15 +33,19 @@
     padding: 28px;
   }
   &__size {
-  font-size: 13px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $second-color;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $second-color;
   }
   &__price {
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  &__buy {
+    padding-top: 25px;
+    border-top: 1px solid $bg-color;
   }
   &__cart {
 
