@@ -16,6 +16,7 @@
   }
   &__caption {
   @include main-caption;
+  padding: 73px 0;
   }
   &__menu-btn {
     &--no-js { //js выключен
