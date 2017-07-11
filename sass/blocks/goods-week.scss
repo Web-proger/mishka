@@ -2,11 +2,9 @@
   @include container;
   @include adapive-padding;
   font-family: "Open Sans", "Arial", sans-serif;
-  &__name {
+  &__caption {
+    @include main-caption;
     font-size: 25px;
-    line-height: 30px;
-    font-weight: bold;
-    color: $main-color;
   }
   &__subject {
     font-size: 17px;
@@ -25,9 +23,6 @@
     line-height: 24px;
     font-weight: 700;
     color: $second-color;
-  }
-  &__caption {
-    @include main-caption;
   }
   &__parameters {
     font-size: 15px;

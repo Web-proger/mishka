@@ -25,3 +25,14 @@
     margin: 0;
    }
 }
+
+@media #{$tablet-width} {
+  .reviews {
+    &__autor {
+      font-size: 17px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+  }
+}

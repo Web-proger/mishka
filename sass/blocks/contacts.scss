@@ -3,11 +3,10 @@
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
   &__caption {
+    @include main-caption;
     padding-left: 30px;
     font-size: 18px;
     line-height: 30px;
-    font-weight: bold;
-    color: $main-color;
   }
   &__table {
     padding-left: 30px;
@@ -23,6 +22,18 @@
 
 @media #{$tablet-width} {
   .contacts {
+    &__table {
+      font-size: 17px;
+    }
+
+  }
+}
+
+@media #{$desctop-width} {
+  .contacts {
+    &__caption {
+
+    }
 
   }
 }

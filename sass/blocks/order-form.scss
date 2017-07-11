@@ -46,6 +46,13 @@
 
 @media #{$tablet-width} {
   .order-form {
+    &__description {
+      font-size: 17px;
+      line-height: 30px;
+    }
+    &__label {
+      font-size: 19px;
+    }
     &__block {
       padding-left: 167px;
     }
@@ -71,6 +78,10 @@
     &__legend {
       left: 0;
       top: 65px;
+    }
+    &__note {
+      font-size: 17px;
+      line-height: 30px;
     }
   }
 }
