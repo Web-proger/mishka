@@ -3,7 +3,7 @@
   @include adapive-padding;
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   background-color: $bg-color;
   &__logo--mob-hidden {
     display: none;

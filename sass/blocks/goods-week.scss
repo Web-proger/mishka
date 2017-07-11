@@ -1,7 +1,7 @@
 .goods-week {
   @include container;
   @include adapive-padding;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   &__name {
     font-size: 25px;
     line-height: 30px;
@@ -28,6 +28,12 @@
   }
   &__caption {
     @include main-caption;
+  }
+  &__parameters {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $second-color;
   }
 }
 
