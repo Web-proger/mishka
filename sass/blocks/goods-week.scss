@@ -1,6 +1,7 @@
 .goods-week {
   @include container;
   @include adapive-padding;
+  position: relative;
   font-family: "Open Sans", "Arial", sans-serif;
   &__caption {
     @include main-caption;
@@ -25,22 +26,40 @@
     color: $second-color;
   }
   &__parameters {
+    width: 100%;
+    border-collapse: collapse;
     font-size: 15px;
     line-height: 20px;
     font-weight: 400;
     color: $second-color;
+  }
+  &__type{
+    padding: 10px 0;
+    width: 98px;
+    border-bottom: 1px solid #ececec;
+  }
+  &__value {
+    padding: 10px 0;
+    border-bottom: 1px solid #ececec;
   }
 }
 
 
 @media #{$tablet-width} {
   .goods-week {
+    min-height: 625px;
+    padding-right: 334px;
     &__subject {
       line-height: 17px;
     }
     &__description {
       font-size: 17px;
       line-height: 30px;
+    }
+    &__img {
+      position: absolute;
+      top: 145px;
+      right: 50px;
     }
     &__price {
       font-size: 20px;
@@ -50,6 +69,8 @@
 
 @media #{$desctop-width} {
   .goods-week {
-
+    min-height: 805px;
+    padding-left: 175px;
+    padding-right: 525px;
   }
 }

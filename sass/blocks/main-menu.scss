@@ -70,7 +70,7 @@
       display: flex;
     }
     &__item {
-      padding: 32px 35px 32px 0;
+      padding: 32px 50px 32px 0;
       font-size: 15px;
       border-top: none;
       &--cart {
@@ -123,6 +123,9 @@
     &__user-items a,
     &__item a {
       font-size: 17px;
+    }
+    &__item--cart {
+      padding-right: 0;
     }
   }
 }
