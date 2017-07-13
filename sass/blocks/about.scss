@@ -1,21 +1,28 @@
 .about {
   @include container;
   @include adapive-padding;
+  padding-top: 33px;
+  padding-bottom: 33px;
   &__caption {
     @include main-caption;
   }
 
   &__item {
-    padding-top: 75px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    margin-bottom: 20px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 20px;
     font-weight: 700;
   }
-  &__items {
+  &__items-wrap {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  &__items {
+    @include padding-margin-0;
+    display: flex;
+    flex-direction: column;
     padding-left: 0;
     list-style: none;
   }
@@ -23,13 +30,17 @@
 
 @media #{$tablet-width} {
   .about {
+    padding-top: 55px;
     &__caption {
 
     }
-
+    &__items-wrap {
+      flex-direction: row;
+    }
     &__item {
       position: relative;
       box-sizing: border-box;
+      margin-bottom: 50px;
       padding-right: 35px;
       width: 334px;
       font-size: 20px;
@@ -57,6 +68,15 @@
 
     &__items {
 
+    }
+  }
+}
+
+@media #{$desctop-width} {
+  .about {
+    padding-left: 225px;
+    &__items {
+      width: 350px;
     }
   }
 }

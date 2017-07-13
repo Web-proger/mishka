@@ -36,3 +36,9 @@
     }
   }
 }
+
+@media #{$desctop-width} {
+  .reviews {
+    padding-left: 175px;
+  }
+}

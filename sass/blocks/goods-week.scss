@@ -7,7 +7,6 @@
   &__caption {
     @include main-caption;
     margin-bottom: 10px;
-    text-align: left;
     font-size: 25px;
   }
   &__subject {
@@ -95,15 +94,15 @@
   .goods-week {
     min-height: 805px;
     padding-top: 235px;
-    padding-left: 175px;
-    padding-right: 685px;
+    padding-left: 225px;
+    padding-right: 640px;
     &__caption {
       top: 130px;
-      left: 175px;
+      left: 220px;
     }
     &__subject {
       top: 130px;
-      left: 40px;
+      left: 90px;
     }
     &__description {
       margin-bottom: 60px;
