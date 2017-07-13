@@ -8,6 +8,7 @@
   background-position: top -15px center;
 
   &__list {
+    position: relative;
     display: block;
     padding: 27px 30px;
     color: #ffffff;
@@ -54,6 +55,7 @@
 @media #{$desctop-width} {
   .promo {
     &__caption {
+      padding: 0 225px;
       font-size: 53px;
       line-height: 57px;
     }

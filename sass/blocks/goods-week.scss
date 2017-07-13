@@ -2,9 +2,12 @@
   @include container;
   @include adapive-padding;
   position: relative;
+  padding-top: 33px;
   font-family: "Open Sans", "Arial", sans-serif;
   &__caption {
     @include main-caption;
+    margin-bottom: 10px;
+    text-align: left;
     font-size: 25px;
   }
   &__subject {
@@ -14,12 +17,17 @@
     color: #63d1bb;
   }
   &__description {
+    margin-top: 0;
+    margin-bottom: 35px;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     color: $second-color;
   }
   &__price {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
@@ -42,17 +50,33 @@
     padding: 10px 0;
     border-bottom: 1px solid #ececec;
   }
+  &__order {
+    margin-bottom: 35px;
+  }
 }
 
 
 @media #{$tablet-width} {
   .goods-week {
     min-height: 625px;
+    padding-top: 150px;
     padding-right: 334px;
+    &__caption {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 530px;
+    }
     &__subject {
+      position: absolute;
+      top: 60px;
+      right: 50px;
+      width: 80px;
       line-height: 17px;
+      text-align: center;
     }
     &__description {
+      margin-bottom: 50px;
       font-size: 17px;
       line-height: 30px;
     }
@@ -70,7 +94,19 @@
 @media #{$desctop-width} {
   .goods-week {
     min-height: 805px;
+    padding-top: 235px;
     padding-left: 175px;
-    padding-right: 525px;
+    padding-right: 685px;
+    &__caption {
+      top: 130px;
+      left: 175px;
+    }
+    &__subject {
+      top: 130px;
+      left: 40px;
+    }
+    &__description {
+      margin-bottom: 60px;
+    }
   }
 }
