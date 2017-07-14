@@ -1,44 +1,83 @@
 .reviews {
   @include container;
   @include adapive-padding;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 50px;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
 
   &__caption {
     @include main-caption;
+    margin-bottom: 35px;
   }
   &__text {
     font-size: 15px;
     color: $second-color;
    }
-   &__autor {
+   &__autor-name {
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
     color: $main-color;
    }
-   &__email {
+   &__autor {
+    margin-bottom: 35px;
+   }
+   &__autor-email {
     font-size: 17px;
     color: $second-color;
    }
    &__text {
     margin: 0;
+    margin-bottom: 35px;
+   }
+   &__autor-info {
+    margin-bottom: 35px;
+   }
+   &__btns {
+    display: flex;
+    height: 52px;
+   }
+   &__btn {
+    width: 50%;
    }
 }
 
 @media #{$tablet-width} {
   .reviews {
-    &__autor {
+    padding-top: 80px;
+    &__caption {
+      margin-bottom: 60px;
+    }
+    &__text {
+      margin-bottom: 60px;
+    }
+    &__autor-name {
       font-size: 17px;
     }
     &__text {
       font-size: 17px;
+    }
+   &__autor-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+   }
+    &__btns {
+      width: 175px;
+    }
+    &__write-review {
+      position: absolute;
+      top: 80px;
+      right: 50px;
+      width: 175px;
     }
   }
 }
 
 @media #{$desctop-width} {
   .reviews {
-    padding-left: 175px;
+    padding-left: 225px;
   }
 }
