@@ -8,16 +8,36 @@
   &__logo--mob-hidden {
     display: none;
   }
+  &__social {
+    position: relative;
+  }
+  &__copyright {
+    position: relative;
+  }
   &__copyright span {
     font-size: 19px;
     line-height: 18px;
   }
 }
 
+@media #{$mobile-width-only} {
+  .page-footer {
+    &__social,
+    &__copyright {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+
 @media #{$tablet-width} {
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    min-height: 143px;
     &__logo--mob-hidden {
       display: flex;
     }
@@ -26,5 +46,7 @@
 
 //Десктоп
 @media #{$desctop-width} {
+  .page-footer {
 
+  }
 }
