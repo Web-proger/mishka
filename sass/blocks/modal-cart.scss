@@ -14,7 +14,7 @@
   background-color: #c4aea8; //временно
   outline: 1px solid red; //временно
   &--invisible {
-
+    display: none;
   }
   &--visible {
     display: block;
