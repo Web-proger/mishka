@@ -15,6 +15,9 @@
     margin-bottom: 30px;
     border: 1px solid $bg-color;
   }
+  &__img-link {
+    display: inline-block;
+  }
   &__caption {
     margin-top: 0;
     margin-bottom: 0;
