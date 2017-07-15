@@ -1,11 +1,31 @@
 .modal-cart {
-  display: none;
+  position: fixed;
+  top: 50vh;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 35px 30px 45px 30px;
   font-family: "Open Sans", "Arial", sans-serif;
+  background-color: #c4aea8; //временно
+  outline: 1px solid red; //временно
+  &--invisible {
+
+  }
+  &--visible {
+    display: block;
+  }
   &__caption {
+  width: 150px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
   color: $main-color;
+  text-align: center;
   }
   &__text {
   font-size: 15px;
@@ -20,11 +40,51 @@
   font-weight: 700;
   color: $second-color;
   }
+  &__size-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 260px;
+  }
   &__label {
-
+    position: relative;
+    text-align: center;
+    width: 82px;
+    height: 52px;
+    border: 2px solid #ececec;
+    &:active {
+      border-color: #63d1bb;
+    }
   }
   &__item {
 
   }
+  &__btn {
+    color: #ffffff;
+    background-color: #63d1bb;
+    border: none;
+  }
+}
 
+@media #{$tablet-width} {
+  .modal-cart {
+    width: 567px;
+    padding: 45px 109px;
+    &__caption {
+      width: auto;
+    }
+    &__size-wrap {
+      width: 350px;
+    }
+    &__label {
+      width: 112px;
+      height: 52px;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .modal-cart {
+
+  }
 }

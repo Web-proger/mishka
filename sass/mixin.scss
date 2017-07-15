@@ -9,7 +9,7 @@
     font-size: 43px;
     line-height: 50px;
   }
-  @media #{$desctop-width} {
+  @media #{$desktop-width} {
     font-size: 53px;
     line-height: 57px;
   }
@@ -22,7 +22,7 @@
   @media #{$tablet-width} {
     width: 768px;
   }
-  @media #{$desctop-width} {
+  @media #{$desktop-width} {
     width: 1150px;
   }
 }
