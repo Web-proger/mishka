@@ -1,6 +1,6 @@
 .order-form {
   @include container;
-  @include adapive-padding;
+  padding-bottom: 50px;
   &__description {
     font-size: 13px;
     line-height: 24px;
@@ -15,7 +15,16 @@
     position: relative;
     padding-top: 45px;
     padding-bottom: 45px;
-    outline: 1px solid grey;
+    outline: 1px solid blue;
+  }
+  &__label {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 700;
+    color: $main-color;
   }
   &__tag-form {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -27,20 +36,131 @@
     line-height: 16px;
     font-weight: 700;
     color: #63d1bb;
-  }
-  &__label {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: 700;
-    color: $main-color;
+    text-transform: uppercase;
   }
   &__note {
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
     color: $second-color;
+  }
+  &__input-phone,
+  &__input-email,
+  &__input-wish {
+    width: 100%;
+    background-color: $bg-color;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $main-color;
+  }
+  textarea {
+    min-height: 140px;
+    border: 2px solid $main-color;
+    resize: none;
+  }
+  input:hover,
+  textarea:hover,
+  input:focus,
+  textarea:focus {
+    border-color: $decor-color;
+  }
+}
+
+//Стилизация переключателей формы
+.order-form__block--type-switch {
+  input {
+    display: none;
+  }
+  label {
+    padding-left: 62px;
+  }
+  span {
+    @include input-style;
+    border-radius: 50%;
+  }
+  span:hover {
+    border-color: $decor-color;
+  }
+  span:active {
+    border-color: #c7c7c7;
+  }
+  input:checked + span::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $decor-color;
+  }
+}
+
+.order-form__block--color-switch {
+  input {
+    display: none;
+  }
+  label {
+    padding-left: 62px;
+  }
+  span {
+    @include input-style;
+  }
+  span:hover {
+    border-color: $decor-color;
+  }
+  span:active {
+    border-color: #c7c7c7;
+  }
+  input:checked + span::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 20px;
+    width: 3px;
+    height: 22px;
+    background-color: $second-color;
+    transform: rotate(45deg);
+  }
+  input:checked + span::before {
+    position: absolute;
+    content: "";
+    top: 18px;
+    left: 10px;
+    width: 3px;
+    height: 10px;
+    background-color: $second-color;
+    transform: rotate(-45deg);
+  }
+}
+
+//Блок ФИО
+.order-form__block-full-name {
+  input {
+    height: 45px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $main-color;
+  }
+  input:hover {
+    border-color: $decor-color;
+  }
+  input:focus {
+    border-color: $decor-color;
+  }
+}
+
+@media #{$mobile-width-only} {
+  .order-form {
+    padding-left: 30px;
+    padding-right: 30px;
+    &__block-full-name input {
+      width: 100%;
+    }
+    input,
+    textarea {
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -49,12 +169,15 @@
     &__description {
       font-size: 17px;
       line-height: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
     &__label {
       font-size: 19px;
     }
     &__block {
-      padding-left: 167px;
+      padding-right: 50px;
+      padding-left: 217px;
     }
     &__block--bg-color {
       background-color: $bg-color;
@@ -76,20 +199,63 @@
       padding-bottom: 17px;
     }
     &__legend {
-      left: 0;
+      left: 50px;
       top: 65px;
     }
+    //Блок ФИО
+    &__block-full-name {
+      display: flex;
+      label {
+        display: flex;
+      }
+    }
+    &__span-full-name {
+      padding-right: 25px;
+      display: inline-block;
+      align-self: center;
+    }
+    &__input-full-name {
+      flex-grow: 1;
+    }
+    &__send-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
     &__note {
+      order: 1;
       font-size: 17px;
       line-height: 30px;
+    }
+    &__btn {
+      width: 230px;
+      height: 52px;
     }
   }
 }
 
 @media #{$desktop-width} {
   .order-form {
+    &__description {
+      padding-left: 225px;
+      padding-right: 225px;
+    }
     &__block {
-      padding-left: 175px;
+      padding-left: 225px;
+      padding-right: 225px;
+    }
+    &__block--color-switch {
+      padding-right: 50px;
+    }
+    &__legend {
+      left: 110px;
+      top: 65px;
+    }
+    &__send-block {
+      padding-left: 225px;
+      padding-right: 225px;
     }
   }
 }

@@ -58,56 +58,64 @@
         <form class="order-form__tag-form" method="post">
           <div class="order-form__description"> Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </div>
-          <div class="order-form__block">
+          <div class="order-form__block order-form__block--type-switch">
             <div class="order-form__legend">Тип</div>
             <label class="order-form__label">
               <input class="order-form__selection-type" type="radio" name="order-type" checked>
               Аксессуар для интерьера
+              <span class="order-form__span-style">Переключатель</span>
             </label>
             <label class="order-form__label">
               <input class="order-form__selection-type" type="radio" name="order-type">
               Детская игрушка
+              <span class="order-form__span-style">Переключатель</span>
             </label>
-          </div>
-          <div class="order-form__block order-form__block--bg-color order-form__block--flex">
+           </div>
+          <div class="order-form__block  order-form__block--color-switch order-form__block--bg-color order-form__block--flex">
             <div class="order-form__legend">Цвет</div>
             <label class="order-form__label">
               <input class="order-form__selection-color" type="checkbox" name="color" checked>
               Белый
+              <span class="order-form__span-style">Переключатель</span>
             </label>
             <label class="order-form__label">
               <input class="order-form__selection-color" type="checkbox" name="color" checked>
               Серый
+              <span class="order-form__span-style">Переключатель</span>
             </label>
             <label class="order-form__label">
               <input class="order-form__selection-color" type="checkbox" name="color">
               «Тиффани»
+              <span class="order-form__span-style">Переключатель</span>
             </label>
             <label class="order-form__label">
               <input class="order-form__selection-color" type="checkbox" name="color">
               Черный
+              <span class="order-form__span-style">Переключатель</span>
             </label>
             <label class="order-form__label">
               <input class="order-form__selection-color" type="checkbox" name="color">
               Розовый
+              <span class="order-form__span-style">Переключатель</span>
             </label>
             <label class="order-form__label">
               <input class="order-form__selection-color" type="checkbox" name="color">
               Оранжевый
+              <span class="order-form__span-style">Переключатель</span>
             </label>
           </div>
-          <div class="order-form__block">
+          <div class="order-form__block order-form__block-full-name">
             <div class="order-form__legend">ФИО</div>
             <label class="order-form__label">
-              Имя:
+              <span class="order-form__span-full-name">Имя:</span>
               <input type="text" class="order-form__input-full-name" placeholder="Введите ваше имя*" required>
             </label>
             <label class="order-form__label">
-              Фамилия:
+              <span class="order-form__span-full-name">Фамилия:</span>
               <input type="text" class="order-form__input-full-name" placeholder="Укажите фамилию" required>
             </label>
             <label class="order-form__label">
-              Отчество
+              <span class="order-form__span-full-name">Отчество</span>
               <input type="text" class="order-form__input-full-name" placeholder="Отчество, если желаете" required>
             </label>
           </div>
@@ -129,8 +137,11 @@
               <textarea class="order-form__input-wish" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
           </div>
-          <p class="order-form__note">*Поля обязательны для заполнения</p>
-          <button class="btn order-form__btn" type="submit" >Отправить заказ</button>
+          <div class="order-form__send-block">
+            <p class="order-form__note">*Поля обязательны для заполнения</p>
+            <button class="btn order-form__btn" type="submit" >Отправить заказ</button>
+          </div>
+
         </form>
       </section>
     </main>

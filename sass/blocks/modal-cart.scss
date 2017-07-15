@@ -53,7 +53,7 @@
     height: 52px;
     border: 2px solid #ececec;
     &:active {
-      border-color: #63d1bb;
+      border-color: $decor-color;
     }
   }
   &__item {
@@ -61,7 +61,7 @@
   }
   &__btn {
     color: #ffffff;
-    background-color: #63d1bb;
+    background-color: $decor-color;
     border: none;
   }
 }
