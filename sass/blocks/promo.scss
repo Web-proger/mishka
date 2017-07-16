@@ -6,64 +6,73 @@
   min-height: 490px;
   background: #fafafa url("../../img/hero-mobile@1x.jpg") no-repeat;
   background-position: top -15px center;
-
-  &__list {
-    position: relative;
-    display: block;
-    padding: 27px 30px;
-    color: #ffffff;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: bold;
-    background-color: #63d1bb;
+}
+.promo__list {
+  position: relative;
+  display: block;
+  padding: 27px 30px;
+  color: #ffffff;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  background-color: #63d1bb;
+  &:hover {
+    background-color: #59d5bc;
   }
-  &__list span {
-    width: 60%;
-    display: inline-block;
+  &:active {
+    background-color: #59d5bc; 
+    color: #97e2d2;
   }
-  &__list--color {
-    background-color: #56c3b2;
+}
+.promo__list span {
+  width: 60%;
+  display: inline-block;
+}
+.promo__list--color {
+  background-color: #56c3b2;
+  &:hover {
+    background-color: #46c1ae;
   }
-  &__caption {
-    @include main-caption;
-    text-align: center;
-    background-color: transparent;
-    padding: 0 35px;
-    margin-bottom: 130px;
+  &:active {
+    background-color: #46c1ae; 
+    color: #8dd5c9;
   }
+}
+.promo__caption {
+  @include main-caption;
+  text-align: center;
+  background-color: transparent;
+  padding: 0 35px;
+  margin-bottom: 130px;
 }
 
 @media #{$tablet-width} {
-  .promo {
-    &__caption {
-      padding: 0 100px;
-    }
-    &__list-wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-    &__list {
-      width: 384px;
-      padding-left: 35px;
-      padding-right: 150px;
-      font-size: 20px;
-      line-height: 30px;
-    }
+  .promo__caption {
+    padding: 0 100px;
+  }
+  .promo__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .promo__list {
+    width: 384px;
+    padding-left: 35px;
+    padding-right: 150px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media #{$desktop-width} {
-  .promo {
-    &__caption {
-      padding: 0 225px;
-      font-size: 53px;
-      line-height: 57px;
-    }
-    &__list {
-      width: 575px;
-      padding-right: 250px;
-      min-height: 121px;
-    }
+  .promo__caption {
+    padding: 0 225px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .promo__list {
+    width: 575px;
+    padding-right: 250px;
+    min-height: 121px;
   }
 }

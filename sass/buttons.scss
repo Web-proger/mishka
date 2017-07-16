@@ -13,4 +13,12 @@
   text-decoration: none;
   border: 2px solid $second-color;
   background-color: #ffffff;
+  &:hover {
+    color: #ffffff;
+    background-color: $second-color;
+  }
+  &:active {
+    color: #8d8d8d;
+    background-color: $second-color;
+  }
 }
