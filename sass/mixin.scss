@@ -50,4 +50,8 @@
   height: 40px;
   font-size: 0;
   border: 2px solid $second-color;
+  @media #{$tablet-width} {
+    width: 52px;
+    height: 52px;
+  }
 }
