@@ -228,22 +228,20 @@
 
 @media #{$tablet-width} {
   .order-form {
-  input[placeholder] {
-    font-size: 19px;
-  }
-  textarea[placeholder] {
-    font-size: 19px;
-    padding-top: 16px;
-    padding-left: 16px;
-  }
+    input[placeholder] {
+      font-size: 19px;
+    }
     &__description {
       font-size: 17px;
       line-height: 30px;
+      margin-bottom: 10px;
       padding-left: 50px;
       padding-right: 50px;
     }
     &__label {
       font-size: 19px;
+      padding-top: 17px;
+      padding-bottom: 17px;
     }
     &__block {
       padding-right: 50px;
@@ -265,28 +263,9 @@
     &__block--length input {
       width: 100%;
     }
-    &__label {
-      padding-top: 17px;
-      padding-bottom: 17px;
-    }
     &__legend {
       left: 50px;
       top: 65px;
-    }
-    //Блок ФИО
-    &__block-full-name {
-      display: flex;
-      label {
-        display: flex;
-      }
-    }
-    &__span-full-name {
-      padding-right: 25px;
-      display: inline-block;
-      align-self: center;
-    }
-    &__input-full-name {
-      flex-grow: 1;
     }
     &__send-block {
       display: flex;
@@ -304,47 +283,119 @@
       width: 230px;
       height: 52px;
     }
-//Блок Тип
-    &__block--type-switch {
-      input:checked + span::after {
-        width: 23px;
-        height: 23px;
-        top: 12px;
-        left: 13px;
-      }
-      label {
-        padding-top: 28px;
-        padding-bottom: 28px;
-        padding-left: 82px;
-      }
+  }
+
+//Блок Тип - Tablet
+  .order-form__block--type-switch {
+    padding-top: 37px;
+    input {
+      padding-left: 18px;
     }
-//Блок цвет
-    &__block--color-switch {
-      padding-top: 50px;
-      padding-bottom: 30px;
-      padding-right: 30px;
-      span {
-        top: 0;
-      }
-      label {
-        margin-bottom: 24px;
-        padding-left: 81px;
-      }
-      label:nth-child(even) {
-        margin-right: 14px;
-      }
-      input:checked + span::after {
-        top: 10px;
-        left: 30px;
-        width: 3px;
-        height: 30px;
-      }
-      input:checked + span::before {
-        top: 22px;
-        left: 15px;
-        width: 3px;
-        height: 16px;
-      }
+    input:checked + span::after {
+      width: 23px;
+      height: 23px;
+      top: 12px;
+      left: 13px;
+    }
+    label {
+      padding-top: 28px;
+      padding-bottom: 28px;
+      padding-left: 82px;
+    }
+  }
+
+//Блок цвет - Tablet
+  .order-form__block--color-switch {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    span {
+      top: 0;
+    }
+    label {
+      margin-bottom: 24px;
+      padding-left: 81px;
+    }
+    label:nth-child(even) {
+      margin-right: 12px;
+    }
+    input:checked + span::after {
+      top: 10px;
+      left: 30px;
+      width: 3px;
+      height: 30px;
+    }
+    input:checked + span::before {
+      top: 22px;
+      left: 15px;
+      width: 3px;
+      height: 16px;
+    }
+  }
+//Блок ФИО - Tablet
+  .order-form__block-full-name {
+      display: flex;
+      padding-top: 55px;
+      padding-bottom: 20px;
+    label {
+      display: flex;
+      padding-top: 0;
+      margin-bottom: 32px;
+    }
+    span {
+      padding-right: 25px;
+      display: inline-block;
+      align-self: center;
+    }
+    input {
+      flex-grow: 1;
+      padding-left: 17px;
+    }
+  }
+//Блок телефон - Tablet
+  .order-form__block--phone {
+    padding-top: 62px;
+    padding-bottom: 0;
+    input {
+      padding-left: 15px;
+      padding-bottom: 13px;
+    }
+  }
+
+//Блок почта - Tablet
+  .order-form__block--email {
+    padding-top: 22px;
+    padding-bottom: 30px;
+    .order-form__legend {
+      top: 25px;
+    }
+    label {
+
+    }
+    input {
+      padding-left: 15px;
+      padding-bottom: 13px;
+    }
+  }
+
+//Блок пожелание - Tablet
+  .order-form__block--wish {
+    padding-top: 53px;
+    margin-bottom: 50px;
+    .order-form__legend {
+      top: 70px;
+    }
+    textarea[placeholder] {
+      font-size: 19px;
+      padding-top: 12px;
+      padding-left: 16px;
+    }
+  }
+
+//Блок с кнопкой отправки формы - Tablet
+  .order-form__send-block {
+    p {
+      margin: 0;
     }
   }
 }
