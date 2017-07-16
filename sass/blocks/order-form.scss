@@ -381,7 +381,7 @@
 //Блок пожелание - Tablet
   .order-form__block--wish {
     padding-top: 53px;
-    margin-bottom: 50px;
+    padding-bottom: 40px;
     .order-form__legend {
       top: 70px;
     }
@@ -394,8 +394,10 @@
 
 //Блок с кнопкой отправки формы - Tablet
   .order-form__send-block {
+    padding-top: 10px;
     p {
       margin: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -420,6 +422,31 @@
     &__send-block {
       padding-left: 225px;
       padding-right: 225px;
+    }
+  }
+
+//Блок Тип - Desktop
+  .order-form__block--type-switch {
+    .order-form__legend {
+      left: 113px;
+    }
+  }
+
+//Блок цвет - Desktop
+  .order-form__block--color-switch {
+    label {
+      width: 263px;
+    }
+    label:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+//Блок с кнопкой отправки формы - Desktop
+  .order-form__send-block {
+    padding-top: 6px;
+    p {
+      margin: 0;
+      padding-bottom: 0;
     }
   }
 }
