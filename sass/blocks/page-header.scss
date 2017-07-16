@@ -14,8 +14,9 @@
   }
   &__caption {
   @include main-caption;
+  margin-top: 17px;
+  padding: 74px 0;
   text-align: center;
-  padding: 73px 0;
   background-color: $bg-color;
   }
   &__menu-btn {
