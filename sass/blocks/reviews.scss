@@ -6,73 +6,72 @@
   padding-bottom: 50px;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
-
-  &__caption {
-    @include main-caption;
-    margin-bottom: 35px;
-  }
-  &__text {
-    font-size: 15px;
-    color: $second-color;
-   }
-   &__autor-name {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: bold;
-    color: $main-color;
-   }
-   &__autor {
-    margin-bottom: 35px;
-   }
-   &__autor-email {
-    font-size: 17px;
-    color: $second-color;
-   }
-   &__text {
-    margin: 0;
-    margin-bottom: 35px;
-   }
-   &__autor-info {
-    margin-bottom: 35px;
-   }
-   &__btns {
-    display: flex;
-    height: 52px;
-   }
-   &__btn {
-    width: 50%;
-   }
 }
+.reviews__caption {
+  @include main-caption;
+  margin-bottom: 35px;
+}
+.reviews__text {
+  font-size: 15px;
+  color: $second-color;
+ }
+ .reviews__autor-name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: $main-color;
+ }
+ .reviews__autor {
+  margin-bottom: 35px;
+ }
+ .reviews__autor-email {
+  font-size: 17px;
+  color: $second-color;
+ }
+ .reviews__text {
+  margin: 0;
+  margin-bottom: 35px;
+ }
+ .reviews__autor-info {
+  margin-bottom: 35px;
+ }
+ .reviews__btns {
+  display: flex;
+  height: 52px;
+ }
+ .reviews__btn {
+  width: 50%;
+ }
 
 @media #{$tablet-width} {
   .reviews {
     padding-top: 80px;
-    &__caption {
-      margin-bottom: 60px;
-    }
-    &__text {
-      margin-bottom: 60px;
-    }
-    &__autor-name {
-      font-size: 17px;
-    }
-    &__text {
-      font-size: 17px;
-    }
-   &__autor-info {
+  }
+  .reviews__caption {
+    margin-bottom: 60px;
+  }
+  .reviews__text {
+    margin-bottom: 60px;
+  }
+  .reviews__autor-name {
+    font-size: 17px;
+  }
+  .reviews__text {
+    font-size: 17px;
+  }
+  .reviews__autor-info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
-   }
-    &__btns {
-      width: 175px;
-    }
-    &__write-review {
-      position: absolute;
-      top: 80px;
-      right: 50px;
-      width: 175px;
-    }
+ }
+  .reviews__btns {
+    width: 175px;
+  }
+  .reviews__write-review {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 175px;
   }
 }
 

@@ -3,80 +3,79 @@
   @include adapive-padding;
   padding-top: 33px;
   padding-bottom: 33px;
-  &__caption {
-    @include main-caption;
-  }
-
-  &__item {
-    padding-top: 60px;
-    margin-bottom: 20px;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 700;
-  }
-  &__items-wrap {
-    display: flex;
-    flex-direction: column;
-  }
-  &__items {
-    @include padding-margin-0;
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    list-style: none;
-  }
 }
+.about__caption {
+  @include main-caption;
+}
+
+.about__item {
+  padding-top: 60px;
+  margin-bottom: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.about__items-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.about__items {
+  @include padding-margin-0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  list-style: none;
+}
+
 
 @media #{$tablet-width} {
   .about {
     padding-top: 55px;
-    &__caption {
+  }
+  .about__caption {
+
+  }
+  .about__items-wrap {
+    flex-direction: row;
+  }
+  .about__item {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding-right: 35px;
+    width: 334px;
+    font-size: 20px;
+    line-height: 22px;
+    &--ico-flower {
 
     }
-    &__items-wrap {
-      flex-direction: row;
-    }
-    &__item {
-      position: relative;
-      box-sizing: border-box;
-      margin-bottom: 50px;
-      padding-right: 35px;
-      width: 334px;
-      font-size: 20px;
-      line-height: 22px;
-      &--ico-flower {
-
-      }
-      &--ico-money {
-
-      }
-      &--ico-heart {
-
-      }
-      &--ico-clew {
-
-      }
-      &--ico-rocket {
-
-      }
-      &--ico-gift {
-
-      }
-    }
-
-
-    &__items {
+    &--ico-money {
 
     }
+    &--ico-heart {
+
+    }
+    &--ico-clew {
+
+    }
+    &--ico-rocket {
+
+    }
+    &--ico-gift {
+
+    }
+  }
+  .about__items {
+
   }
 }
 
 @media #{$desktop-width} {
   .about {
     padding-left: 225px;
-    &__items {
-      width: 350px;
-    }
+  }
+  .about__items {
+    width: 350px;
   }
 }

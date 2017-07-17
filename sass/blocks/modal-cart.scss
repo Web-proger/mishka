@@ -13,73 +13,73 @@
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: #c4aea8; //временно
   outline: 1px solid red; //временно
-  &--invisible {
-    display: none;
-  }
-  &--visible {
-    display: block;
-  }
-  &__caption {
+}
+.modal-cart--invisible {
+  display: none;
+}
+.modal-cart--visible {
+  display: block;
+}
+.modal-cart__caption {
   width: 150px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
   color: $main-color;
   text-align: center;
-  }
-  &__text {
+}
+.modal-cart__text {
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   color: $second-color;
-  }
-  &__form {
+}
+.modal-cart__form {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   color: $second-color;
+}
+.modal-cart__size-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 260px;
+}
+.modal-cart__label {
+  position: relative;
+  text-align: center;
+  width: 82px;
+  height: 52px;
+  border: 2px solid #ececec;
+  &:active {
+    border-color: $decor-color;
   }
-  &__size-wrap {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    width: 260px;
-  }
-  &__label {
-    position: relative;
-    text-align: center;
-    width: 82px;
-    height: 52px;
-    border: 2px solid #ececec;
-    &:active {
-      border-color: $decor-color;
-    }
-  }
-  &__item {
+}
+.modal-cart__item {
 
-  }
-  &__btn {
-    color: #ffffff;
-    background-color: $decor-color;
-    border: none;
-  }
+}
+.modal-cart__btn {
+  color: #ffffff;
+  background-color: $decor-color;
+  border: none;
 }
 
 @media #{$tablet-width} {
   .modal-cart {
     width: 567px;
     padding: 45px 109px;
-    &__caption {
-      width: auto;
-    }
-    &__size-wrap {
-      width: 350px;
-    }
-    &__label {
-      width: 112px;
-      height: 52px;
-    }
+  }
+  .modal-cart__caption {
+    width: auto;
+  }
+  .modal-cart__size-wrap {
+    width: 350px;
+  }
+  .modal-cart__label {
+    width: 112px;
+    height: 52px;
   }
 }
 

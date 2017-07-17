@@ -2,28 +2,26 @@
   @include container;
   padding-top: 22px;
   padding-bottom: 22px;
-  &__flex-wrap {
-    @include adapive-padding;
-  }
-  &__top {
-    display: block;
-    text-align: center;
-  }
-  &__logo {
-    display: inline-block;
-  }
-  &__caption {
-  @include main-caption;
-  margin-top: 17px;
-  padding: 74px 0;
+}
+.page-header__flex-wrap {
+  @include adapive-padding;
+}
+.page-header__top {
+  display: block;
   text-align: center;
-  background-color: $bg-color;
-  }
-  &__menu-btn {
-    &--no-js { //js выключен
-      display: none;
-    }
-  }
+}
+.page-header__logo {
+  display: inline-block;
+}
+.page-header__caption {
+@include main-caption;
+margin-top: 17px;
+padding: 74px 0;
+text-align: center;
+background-color: $bg-color;
+}
+.page-header__menu-btn--no-js {
+    display: none;
 }
 
 @media #{$mobile-width-only} {
@@ -33,7 +31,8 @@
 //Кнопка меню с ключенным и выключенным JS и стилизация кнопки
   .page-header {
       position: relative;
-    &__menu-btn {
+  }
+    .page-header__menu-btn {
       position: absolute;
       width: 20px;
       height: 20px;
@@ -41,71 +40,72 @@
       right: 0;
       font-size: 0;
       border: none;
-      &--closed { //js включен, меню закрыто
-        &::before {
-          content: "";
-          position: absolute;
-          top: 4px;
-          left: 0;
-          height: 2px;
-          width: 20px;
-          background-color: #000000;
-          box-shadow: 0 6px #000000,
-                      0 12px #000000;
-        }
-      }
-      &--opened { //js включен, меню открыто
-        &::before {
-          content: "";
-          position: absolute;
-          top: 9px;
-          left: 0;
-          height: 2px;
-          width: 20px;
-          background-color: #000000;
-          transform: rotate(45deg);
-        }
-        &::after {
-          content: "";
-          position: absolute;
-          top: 9px;
-          left: 0;
-          height: 2px;
-          width: 20px;
-          background-color: #000000;
-          transform: rotate(-45deg);
-        }
-      }
+    }
+  .page-header__menu-btn--closed { //js включен, меню закрыто
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      height: 2px;
+      width: 20px;
+      background-color: #000000;
+      box-shadow: 0 6px #000000,
+                  0 12px #000000;
+    }
+  }
+  .page-header__menu-btn--opened { //js включен, меню открыто
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0;
+      height: 2px;
+      width: 20px;
+      background-color: #000000;
+      transform: rotate(45deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 0;
+      height: 2px;
+      width: 20px;
+      background-color: #000000;
+      transform: rotate(-45deg);
     }
   }
 }
 
 @media #{$tablet-width} {
   .page-header {
-    &__menu-btn {
-      display: none;
-    }
-    &__flex-wrap {
-      position: relative;
-      padding-top: 56px;
-    }
-    &__logo {
-      position: absolute;
-      top: 0;
-      left: 50px;
-    }
+
+  }
+  .page-header__menu-btn {
+    display: none;
+  }
+  .page-header__flex-wrap {
+    position: relative;
+    padding-top: 56px;
+  }
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 50px;
   }
 }
 
 @media #{$desktop-width} {
   .page-header {
-    &__flex-wrap {
-      padding-top: 0;
-    }
-    &__logo {
-      position: absolute;
-      top: 25px;
-      left: 485px;
-    }
+
+  }
+  .page-header__flex-wrap {
+    padding-top: 0;
+  }
+  .page-header__logo {
+    position: absolute;
+    top: 25px;
+    left: 485px;
   }
 }

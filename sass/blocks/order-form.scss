@@ -1,14 +1,15 @@
 .order-form {
   @include container;
   padding-bottom: 50px;
-  &__description {
+}
+  .order-form__description {
     margin-bottom: 25px;
     font-size: 13px;
     line-height: 24px;
     font-weight: 400;
     color: $second-color;
   }
-  &__block {
+  .order-form__block {
     padding: 0;
     margin: 0;
     display: flex;
@@ -18,7 +19,7 @@
     padding-bottom: 40px;
     outline: 1px solid blue;
   }
-  &__label {
+  .order-form__label {
     position: relative;
     padding-top: 20px;
     padding-bottom: 23px;
@@ -27,10 +28,10 @@
     font-weight: 700;
     color: $main-color;
   }
-  &__tag-form {
+  .order-form__tag-form {
     font-family: "Open Sans", "Arial", sans-serif;
   }
-  &__legend {
+  .order-form__legend {
     position: absolute;
     top: 0;
     font-size: 17px;
@@ -39,42 +40,41 @@
     color: #63d1bb;
     text-transform: uppercase;
   }
-  &__note {
+  .order-form__note {
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
     color: $second-color;
   }
-  input[placeholder] {
+  .order-form input[placeholder] {
     font-size: 17px;
   }
-  textarea[placeholder] {
+  .order-form textarea[placeholder] {
     font-size: 17px;
     padding-top: 14px;
     padding-left: 16px;
   }
-  &__input-phone,
-  &__input-email,
-  &__input-wish {
+  .order-form__input-phone,
+  .order-form__input-email,
+  .order-form__input-wish {
     width: 100%;
     background-color: $bg-color;
     border: none;
     outline: none;
     border-bottom: 2px solid $main-color;
   }
-  textarea {
+  .order-form textarea {
     min-height: 143px;
     border: 2px solid $main-color;
     resize: none;
     background-color: #ffffff;
   }
-  input:hover,
-  textarea:hover,
-  input:focus,
-  textarea:focus {
+  .order-form input:hover,
+  .order-form textarea:hover,
+  .order-form input:focus,
+  .order-form textarea:focus {
     border-color: $decor-color;
   }
-}
 
 //Стилизация переключателей формы radiobutton
 .order-form__block--type-switch {
@@ -217,11 +217,13 @@
   .order-form {
     padding-left: 30px;
     padding-right: 30px;
-    &__block-full-name input {
-      width: 100%;
-    }
     input {
       background-color: #ffffff;
+    }
+  }
+  .order-form__block-full-name {
+    input {
+    width: 100%;
     }
   }
 }
@@ -231,58 +233,58 @@
     input[placeholder] {
       font-size: 19px;
     }
-    &__description {
-      font-size: 17px;
-      line-height: 30px;
-      margin-bottom: 10px;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    &__label {
-      font-size: 19px;
-      padding-top: 17px;
-      padding-bottom: 17px;
-    }
-    &__block {
-      padding-right: 50px;
-      padding-left: 217px;
-    }
-    //убрать
-    &__block--bg-color {
-      background-color: $bg-color;
-    }
-    &__block--flex {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-    }
-    &__block--flex label{
-      width: 250px;
-    }
-    &__block--length input {
-      width: 100%;
-    }
-    &__legend {
-      left: 50px;
-      top: 65px;
-    }
-    &__send-block {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    &__note {
-      order: 1;
-      font-size: 17px;
-      line-height: 30px;
-    }
-    &__btn {
-      width: 230px;
-      height: 52px;
-    }
+  }
+  .order-form__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .order-form__label {
+    font-size: 19px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  .order-form__block {
+    padding-right: 50px;
+    padding-left: 217px;
+  }
+  //убрать
+  .order-form__block--bg-color {
+    background-color: $bg-color;
+  }
+  .order-form__block--flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .order-form__block--flex label{
+    width: 250px;
+  }
+  .order-form__block--length input {
+    width: 100%;
+  }
+  .order-form__legend {
+    left: 50px;
+    top: 65px;
+  }
+  .order-form__send-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .order-form__note {
+    order: 1;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .order-form__btn {
+    width: 230px;
+    height: 52px;
   }
 
 //Блок Тип - Tablet
@@ -404,25 +406,26 @@
 
 @media #{$desktop-width} {
   .order-form {
-    &__description {
-      padding-left: 225px;
-      padding-right: 225px;
-    }
-    &__block {
-      padding-left: 225px;
-      padding-right: 225px;
-    }
-    &__block--color-switch {
-      padding-right: 50px;
-    }
-    &__legend {
-      left: 110px;
-      top: 65px;
-    }
-    &__send-block {
-      padding-left: 225px;
-      padding-right: 225px;
-    }
+
+  }
+  .order-form__description {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+  .order-form__block {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+  .order-form__block--color-switch {
+    padding-right: 50px;
+  }
+  .order-form__legend {
+    left: 110px;
+    top: 65px;
+  }
+  .order-form__send-block {
+    padding-left: 225px;
+    padding-right: 225px;
   }
 
 //Блок Тип - Desktop

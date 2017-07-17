@@ -38,12 +38,10 @@
 }
 .catalog__item {
   &:hover .catalog__description {
-    box-shadow: 5px 8px 4px 0 #ebebeb,
-               -5px 8px 4px 0 #ebebeb;
+    box-shadow: 0 6px 10px 0 #ebebeb;
   }
   &:active .catalog__description {
-    box-shadow: 3px 4px 4px 0 #ebebeb,
-               -3px 4px 4px 0 #ebebeb;
+    box-shadow: 0 3px 5px 0 #ebebeb;
   }
 }
 .catalog__size {
