@@ -60,7 +60,7 @@
   .goods-week {
     min-height: 625px;
     padding-top: 150px;
-    padding-right: 334px;
+    padding-right: 428px;
   }
   .goods-week__caption {
     position: absolute;
@@ -99,6 +99,7 @@
     padding-right: 640px;
   }
   .goods-week__caption {
+    z-index: 1;
     top: 130px;
     left: 220px;
   }

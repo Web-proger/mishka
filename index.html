@@ -14,7 +14,7 @@
         <div class="page-header__top">
           <button class="page-header__menu-btn page-header__menu-btn--closed page-header__menu-btn--no-js">Меню</button>
           <a class="page-header__logo">
-            <img src="img/logo-mobile.svg" alt="Логотип">
+            <img src="img/icons/logo-mobile.svg" alt="Логотип">
           </a>
         </div>
         <nav class="main-menu main-menu--no-js">
@@ -82,7 +82,12 @@
           </tbody>
         </table>
         <div class="goods-week__img">
-          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="production__video-img" alt="Видео, процесса изготовления" src="img/triple-set-mobile@1x.jpg"
+            srcset="img/triple-set-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <div class="goods-week__price">Цена: 990 руб.</div>
         <a class="goods-week__order btn" id="popup-open" href="#">Заказать</a>
@@ -125,7 +130,7 @@
             <tr class="contacts__item">
               <td class="contacts__table-parametr">e-mail:</td>
               <td class="contacts__table-value">
-                <a class="contacts__mailto" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>  
+                <a class="contacts__mailto" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </td>
             </tr>
             <tr class="contacts__item">
@@ -135,7 +140,11 @@
           </tbody>
         </table>
         <div class="contacts__map">
-          <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img alt="Карта" width="320" height="457" src="img/map-mobile@1x.jpg"  srcset="img/map-mobile@2x.jpg 2x">
+          </picture>
         </div>
         <a class="btn contacts__btn" href="#">Напишите нам</a>
       </section>
@@ -143,7 +152,7 @@
 
     <footer class="page-footer">
         <a class="page-footer__logo page-footer__logo--mob-hidden">
-          <img src="img/logo-mobile.svg" alt="Логотип">
+          <img src="img/icons/logo-mobile.svg" alt="Логотип">
         </a>
         <div class="page-footer__social">
           <a href="#" class="page-footer__social-item page-footer__social-item--ico-inst">insagram</a>
