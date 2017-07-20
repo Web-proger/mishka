@@ -171,18 +171,15 @@
     </footer>
     <div class="modal-cart modal-cart--invisible">
       <div class="modal-cart__caption">Добавить в корзину</div>
-      <p class="modal-cart__text">Выберите размер</p>
+      <p class="modal-cart__text">Выберите размер:</p>
       <form class="modal-cart__form">
         <div class="modal-cart__size-wrap">
-          <label class="modal-cart__label">S
-            <input class="modal-cart__item" type="radio" name="size" value="S">
-          </label>
-          <label class="modal-cart__label">M
-            <input class="modal-cart__item" type="radio" name="size" value="M">
-          </label>
-          <label class="modal-cart__label">L
-            <input class="modal-cart__item" type="radio" name="size" value="L">
-          </label>
+          <input class="modal-cart__item" id="s-size" type="radio" name="size" value="S" checked>
+          <label class="modal-cart__label" for="s-size">S</label>
+          <input class="modal-cart__item" id="m-size" type="radio" name="size" value="M">
+          <label class="modal-cart__label" for="m-size">M</label>
+          <input class="modal-cart__item" id="l-size" type="radio" name="size" value="L">
+          <label class="modal-cart__label" for="l-size">L</label>
         </div>
         <button class="btn modal-cart__btn" type="submit" name="add-cart">Добавить</button>
       </form>

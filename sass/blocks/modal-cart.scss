@@ -7,12 +7,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 338px;
   width: 320px;
   margin: 0 auto;
-  padding: 35px 30px 45px 30px;
+  padding: 30px 30px 45px 30px;
   font-family: "Open Sans", "Arial", sans-serif;
-  background-color: #c4aea8; //временно
-  outline: 1px solid red; //временно
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
 }
 .modal-cart--invisible {
   display: none;
@@ -27,8 +29,11 @@
   font-weight: 700;
   color: $main-color;
   text-align: center;
+  text-transform: uppercase;
 }
 .modal-cart__text {
+  margin-bottom: 23px;
+  margin-top: 10px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -44,23 +49,29 @@
 .modal-cart__size-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   width: 260px;
 }
 .modal-cart__label {
   position: relative;
-  text-align: center;
+  padding-top: 17px;
   width: 82px;
   height: 52px;
+  text-align: center;
   border: 2px solid #ececec;
-  &:active {
-    border-color: $decor-color;
+  &:hover {
+    border-color: #c7c7c7;
   }
 }
+.modal-cart__item:checked + .modal-cart__label {
+    border-color: $decor-color;
+  }
 .modal-cart__item {
   display: none;
 }
 .modal-cart__btn {
+  padding-top: 17px;
+  padding-bottom: 17px;
   color: #ffffff;
   background-color: $decor-color;
   border: none;
@@ -70,9 +81,17 @@
   .modal-cart {
     width: 567px;
     padding: 45px 109px;
+    padding-top: 35px;
+    padding-bottom: 40px;
   }
   .modal-cart__caption {
-    width: auto;
+    font-size: 30px;
+    line-height: 57px;
+    width: 356px;
+  }
+  .modal-cart__text {
+    font-size: 17px;
+    line-height: 30px;
   }
   .modal-cart__size-wrap {
     width: 350px;
