@@ -55,3 +55,12 @@
     height: 52px;
   }
 }
+
+@mixin hover-active-fill() {
+    &:hover {
+      fill: $turquoise-color;
+    }
+    &:active {
+      fill: $turquoise-light-color;
+    }
+}
