@@ -12,10 +12,10 @@
 }
 .production__wrapper {
   border: 1px solid $bg-color;
-  &:hover .production__block-wrap {
+  &:hover {
     box-shadow: 0 6px 10px 0 #ebebeb;
   }
-  &:active .production__block-wrap {
+  &:active {
     box-shadow: 0 3px 5px 0 #ebebeb;
   }
 }
@@ -29,6 +29,15 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 35px;
+    width: 32px;
+    height: 28px;
+    background: url("../img/icons/icon-video.svg") no-repeat;
+  }
 }
 .production__caption-name {
   color: $main-color;
@@ -36,24 +45,45 @@
 }
 .production__description {
   margin-top: 0;
-  margin-bottom: 30px;
-  padding: 0 30px;
+  margin-bottom: 25px;
+  padding: 0 34px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: $second-color;
 }
 .production__video {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-top: 96px;
 }
-.production__order-btn {
-  margin-left: 30px;
-  margin-bottom: 35px;
-  width: 200px;
-  line-height: 16px;
+.production__picture {
+  display: inline-block;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    width: 101px;
+    height: 77px;
+    background: url("../img/icons/icon-play.svg") no-repeat;
+  }
+  &:hover::after {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 
+.production__order-btn {
+  margin-left: 34px;
+  margin-bottom: 32px;
+  width: 192px;
+  line-height: 16px;
+}
 
 @media #{$tablet-width} {
   .production {
@@ -61,17 +91,23 @@
   }
   .production__video {
     padding-top: 0;
+    margin-bottom: 0;
   }
   .production__ block-wrap {
     display: flex;
     flex-direction: column;
   }
   .production__caption {
-    position: static;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 668px;
-    padding: 35px 0;
+    padding: 32px 0;
     padding-left: 105px;
-
+    &::after {
+      left: 40px;
+      top: 30px;
+    }
   }
   .production__caption-name {
     font-size: 20px;
@@ -79,19 +115,21 @@
   .production__description {
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-size: 15px;
     line-height: 30px;
   }
   .production__order-btn {
-    width: 580px;
-    margin-left: 0;
+    width: 584px;
+    margin-left: 40px;
     align-self: center;
   }
 }
 
 @media #{$desktop-width} {
   .production {
+    padding-bottom: 0;
+    margin-bottom: 105px;
     flex-direction: row;
   }
   .production__wrapper {
@@ -99,11 +137,16 @@
   }
   .production__caption {
     width: 231px;
-    padding-top: 100px;
+    padding-top: 95px;
     padding-bottom: 30px;
     padding-left: 0;
+    &::after {
+      left: 0;
+      top: 42px;
+    }
   }
   .production__video {
+    height: 455px;
     width: 682px;
   }
   .production__block-wrap {
@@ -117,6 +160,6 @@
   }
   .production__description {
     padding: 0;
-    margin-bottom: 55px;
+    margin-bottom: 48px;
   }
 }
