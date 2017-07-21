@@ -6,15 +6,41 @@
 }
 .about__caption {
   @include main-caption;
+  font-size: 25px;
 }
 
 .about__item {
-  padding-top: 60px;
-  margin-bottom: 20px;
+  position: relative;
+  padding-top: 84px;
+  padding-right: 10px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  &--ico-flower {
+    background: url("../img/icons/icon-feature-1.svg") no-repeat;
+    background-position: top 32px left 10px;
+  }
+  &--ico-money {
+    background: url("../img/icons/icon-feature-3.svg") no-repeat;
+    background-position: top 32px left;
+  }
+  &--ico-heart {
+    background: url("../img/icons/icon-feature-5.svg") no-repeat;
+    background-position: top 35px left 8px;
+  }
+  &--ico-clew {
+    background: url("../img/icons/icon-feature-2.svg") no-repeat;
+    background-position: top 32px left 5px;
+  }
+  &--ico-rocket {
+    background: url("../img/icons/icon-feature-4.svg") no-repeat;
+    background-position: top 32px left;
+  }
+  &--ico-gift {
+    background: url("../img/icons/icon-feature-6.svg") no-repeat;
+    background-position: top 30px left 2px;
+  }
 }
 .about__items-wrap {
   display: flex;
@@ -40,34 +66,31 @@
     flex-direction: row;
   }
   .about__item {
-    position: relative;
     box-sizing: border-box;
-    margin-bottom: 50px;
+    padding-top: 100px;
+    margin-bottom: 10px;
     padding-right: 35px;
     width: 334px;
     font-size: 20px;
     line-height: 22px;
     &--ico-flower {
-
+      background-position: top 43px left 10px;
     }
     &--ico-money {
-
+      background-position: top 45px left;
     }
     &--ico-heart {
-
+      background-position: top 50px left 10px;
     }
     &--ico-clew {
-
+      background-position: top 46px left 5px;
     }
     &--ico-rocket {
-
+      background-position: top 50px left;
     }
     &--ico-gift {
-
+      background-position: top 48px left 4px;
     }
-  }
-  .about__items {
-
   }
 }
 
