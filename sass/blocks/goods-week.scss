@@ -2,43 +2,48 @@
   @include container;
   @include adapive-padding;
   position: relative;
-  padding-top: 33px;
+  padding-top: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 .goods-week__caption {
   @include main-caption;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 25px;
 }
 .goods-week__subject {
+  margin-bottom: 22px;
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
   color: #63d1bb;
+  text-transform: uppercase;
 }
 .goods-week__description {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
   color: $second-color;
 }
-.goods-week__price {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $second-color;
-}
 .goods-week__parameters {
+  margin-bottom: 28px;
   width: 100%;
   border-collapse: collapse;
   font-size: 15px;
   line-height: 20px;
   font-weight: 400;
+  color: $second-color;
+}
+.goods-week__img {
+  margin-bottom: 20px;
+}
+.goods-week__price {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
   color: $second-color;
 }
 .goods-week__type{
@@ -60,7 +65,7 @@
   .goods-week {
     min-height: 625px;
     padding-top: 150px;
-    padding-right: 428px;
+    padding-right: 426px;
   }
   .goods-week__caption {
     position: absolute;
@@ -71,23 +76,27 @@
   .goods-week__subject {
     position: absolute;
     top: 60px;
-    right: 50px;
+    right: 70px;
     width: 80px;
     line-height: 17px;
     text-align: center;
   }
   .goods-week__description {
-    margin-bottom: 50px;
+    margin-bottom: 34px;
     font-size: 17px;
     line-height: 30px;
   }
+  .goods-week__parameters {
+    margin-bottom: 55px;
+  }
   .goods-week__img {
     position: absolute;
-    top: 145px;
+    top: 157px;
     right: 50px;
   }
   .goods-week__price {
     font-size: 20px;
+    margin-bottom: 35px;
   }
 }
 
@@ -96,7 +105,7 @@
     min-height: 805px;
     padding-top: 235px;
     padding-left: 225px;
-    padding-right: 640px;
+    padding-right: 635px;
   }
   .goods-week__caption {
     z-index: 1;
@@ -104,10 +113,19 @@
     left: 220px;
   }
   .goods-week__subject {
-    top: 130px;
+    top: 145px;
     left: 90px;
   }
+  .goods-week__img {
+    top: 78px;
+  }
   .goods-week__description {
-    margin-bottom: 60px;
+    margin-bottom: 47px;
+  }
+  .goods-week__parameters {
+    margin-bottom: 110px;
+  }
+  .goods-week__price {
+    margin-bottom: 33px;
   }
 }
