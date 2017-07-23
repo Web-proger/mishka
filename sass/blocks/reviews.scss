@@ -2,38 +2,38 @@
   @include container;
   @include adapive-padding;
   position: relative;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 50px;
   font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
 }
 .reviews__caption {
   @include main-caption;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .reviews__text {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 15px;
   color: $second-color;
  }
  .reviews__autor-name {
+  margin-bottom: 5px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   color: $main-color;
  }
  .reviews__autor {
-  margin-bottom: 35px;
+  margin-bottom: 28px;
  }
  .reviews__autor-email {
   font-size: 17px;
+  line-height: 30px;
   color: $second-color;
  }
- .reviews__text {
-  margin: 0;
-  margin-bottom: 35px;
- }
  .reviews__autor-info {
-  margin-bottom: 35px;
+  margin-bottom: 38px;
  }
  .reviews__btns {
   display: flex;
@@ -41,17 +41,46 @@
  }
  .reviews__btn {
   width: 50%;
+  font-size: 0;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+  outline: none;
+  &:hover {
+    fill: #666666;
+  }
+  &:active {
+    fill: #b2b2b2;
+  }
  }
+
+ .reviews__btn--prev svg,
+ .reviews__btn--next svg {
+  width: 51px;
+  height: 26px;
+ }
+
 
 @media #{$tablet-width} {
   .reviews {
-    padding-top: 80px;
+    position: relative;
+    padding-top: 123px;
+    padding-bottom: 10px;
+    &:after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 45px;
+      left: 0;
+      width: 350px;
+      height: 457px;
+      background: #f4f4f4 url("../img/review@1x.jpg") no-repeat;
+    }
   }
   .reviews__caption {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .reviews__text {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
   .reviews__autor-name {
     font-size: 17px;
@@ -67,16 +96,37 @@
   .reviews__btns {
     width: 175px;
   }
+  .reviews__btn {
+    border: none;
+  }
   .reviews__write-review {
     position: absolute;
-    top: 80px;
+    top: 123px;
     right: 50px;
     width: 175px;
   }
 }
 
+@media #{$tablet-width} and #{$retina}  {
+  .reviews:after {
+      background: #f4f4f4 url("../img/review@2x.jpg") no-repeat;
+    }
+}
+
+
 @media #{$desktop-width} {
   .reviews {
     padding-left: 225px;
+    &::after {
+      top: 50px;
+      left: 50px;
+    }
+  }
+  .reviews__write-review {
+    top: 130px;
+  }
+  .reviews__text {
+    padding-right: 100px;
+    margin-bottom: 38px;
   }
 }
