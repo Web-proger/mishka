@@ -178,10 +178,25 @@
   padding-top: 40px;
   padding-bottom: 10px;
   label {
+    position: relative;
     padding-top: 0;
   }
   input {
     padding-bottom: 10px;
+    &:hover + svg {
+      fill: $decor-color;
+    }
+    &:focus + svg {
+      fill: $decor-color;
+    }
+  }
+  svg {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    width: 25px;
+    height: 24px;
+    fill: #cccccc;
   }
 }
 
@@ -190,10 +205,25 @@
   padding-top: 40px;
   padding-bottom: 10px;
   label {
+    position: relative;
     padding-top: 0;
   }
   input {
     padding-bottom: 10px;
+    &:hover + svg {
+      fill: $decor-color;
+    }
+    &:focus + svg {
+      fill: $decor-color;
+    }
+  }
+  svg {
+    position: absolute;
+    width: 31px;
+    height: 30px;
+    bottom: 30px;
+    right: 5px;
+    fill: #cccccc;
   }
 }
 
@@ -363,6 +393,10 @@
       padding-left: 15px;
       padding-bottom: 13px;
     }
+    svg {
+      bottom: 34px;
+      right: 25px;
+    }
   }
 
 //Блок почта - Tablet
@@ -378,6 +412,10 @@
     input {
       padding-left: 15px;
       padding-bottom: 13px;
+    }
+    svg {
+      bottom: 28px;
+      right: 21px;
     }
   }
 
@@ -451,6 +489,19 @@
     p {
       margin: 0;
       padding-bottom: 0;
+    }
+  }
+//Блок телефон - desktop
+  .order-form__block--phone {
+    svg {
+      right: 10px;
+    }
+  }
+
+//Блок почта - desktop
+  .order-form__block--email {
+    svg {
+      right: 5px;
     }
   }
 }
