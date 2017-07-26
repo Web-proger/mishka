@@ -18,7 +18,7 @@
 @mixin container() {
   margin: 0 auto;
   width: 320px;
-  outline: 1px solid blue;
+//  outline: 1px solid blue;
   @media #{$tablet-width} {
     width: 768px;
   }

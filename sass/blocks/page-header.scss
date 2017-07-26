@@ -20,7 +20,7 @@
   text-align: center;
 }
 .page-header__logo {
-  display: inline-block;
+  display: none;
 }
 .page-header__caption {
 @include main-caption;
@@ -39,19 +39,23 @@ background-color: $bg-color;
   }
 //Кнопка меню с ключенным и выключенным JS и стилизация кнопки
   .page-header {
-      position: relative;
+    position: relative;
+    border-top: 1px solid #ececec;
   }
-    .page-header__menu-btn {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 6px;
-      right: 0;
-      font-size: 0;
-      border: none;
-      background-color: #ffffff;
-      outline: none;
-    }
+  .page-header__logo {
+    display: inline-block;
+  }
+  .page-header__menu-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 6px;
+    right: 0;
+    font-size: 0;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+  }
   .page-header__menu-btn--closed { //js включен, меню закрыто
     &::before {
       content: "";
@@ -92,16 +96,26 @@ background-color: $bg-color;
 }
 
 @media #{$tablet-width} {
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 70px;
+  }
   .page-header__caption {
     position: relative;
+    margin-top: 0;
+    padding-top: 93px;
+    padding-bottom: 85px;
+    border-top: 1px solid #ececec;
     &::after {
       position: absolute;
       content: "";
-      bottom: -12px;
+      bottom: -10px;
       left: 0;
-      height: 34px;
+      height: 22.8px;
       width: 100%;
-      background: url(../img/icons/bg-zigzag-fill.svg) repeat-x bottom center;
+      background: url(../img/icons/bg-zigzag-fill.svg) repeat-x left top;
+      background-size: cover;
     }
   }
   .page-header__menu-btn {
@@ -109,7 +123,6 @@ background-color: $bg-color;
   }
   .page-header__flex-wrap {
     position: relative;
-    padding-top: 56px;
   }
   .page-header__logo {
     position: absolute;
@@ -120,7 +133,7 @@ background-color: $bg-color;
 
 @media #{$desktop-width} {
   .page-header {
-
+    margin-bottom: 140px;
   }
   .page-header__flex-wrap {
     padding-top: 0;
