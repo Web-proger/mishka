@@ -92,8 +92,17 @@ background-color: $bg-color;
 }
 
 @media #{$tablet-width} {
-  .page-header {
-
+  .page-header__caption {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -12px;
+      left: 0;
+      height: 34px;
+      width: 100%;
+      background: url(../img/icons/bg-zigzag-fill.svg) repeat-x bottom center;
+    }
   }
   .page-header__menu-btn {
     display: none;
