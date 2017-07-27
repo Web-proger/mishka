@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 12px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: $main-color;
 }
@@ -80,6 +81,10 @@
 }
 
 @media #{$tablet-width} {
+  .catalog {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
   .catalog__picture {
     width: 334px;
     height: 334px;
