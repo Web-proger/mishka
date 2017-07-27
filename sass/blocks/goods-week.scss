@@ -2,7 +2,7 @@
   @include container;
   @include adapive-padding;
   position: relative;
-  padding-top: 30px;
+  padding-top: 10px;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 .goods-week__caption {
@@ -63,9 +63,20 @@
 
 @media #{$tablet-width} {
   .goods-week {
+    position: relative;
     min-height: 625px;
-    padding-top: 150px;
+    padding-top: 145px;
     padding-right: 426px;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height: 16px;
+      width: 100%;
+      background: url(../img/icons/bg-zigzag-line.svg) no-repeat center top;
+      background-size: cover;
+    }
   }
   .goods-week__caption {
     position: absolute;
@@ -103,21 +114,24 @@
 @media #{$desktop-width} {
   .goods-week {
     min-height: 805px;
-    padding-top: 235px;
+    padding-top: 229px;
     padding-left: 225px;
     padding-right: 635px;
+    &::after {
+      height: 24px;
+    }
   }
   .goods-week__caption {
     z-index: 1;
-    top: 130px;
+    top: 123px;
     left: 220px;
   }
   .goods-week__subject {
-    top: 145px;
-    left: 90px;
+    top: 139px;
+    left: 92px;
   }
   .goods-week__img {
-    top: 78px;
+    top: 71px;
   }
   .goods-week__description {
     margin-bottom: 47px;

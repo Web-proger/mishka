@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 490px;
+  margin-top: 15px;
   background: #fafafa url("../img/hero-mobile@1x.jpg") no-repeat;
   background-position: top -18px center;
   @media #{$retina}  {
@@ -94,9 +95,21 @@
 
 @media #{$tablet-width} {
   .promo {
+    position: relative;
     background: #fafafa url("../img/hero-desktop@1x.jpg") no-repeat;
     background-position: top center;
     height: 745px;
+    margin-top: 0;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -10px;
+      left: 0;
+      height: 22.8px;
+      width: 100%;
+      background: url(../img/icons/bg-zigzag-fill.svg) repeat-x left top;
+      background-size: cover;
+    }
     @media  #{$retina}  {
       background: #fafafa url("../img/hero-desktop@2x.jpg") no-repeat;
       background-position: top center;
@@ -105,7 +118,7 @@
   }
   .promo__caption {
     padding: 0 100px;
-    margin-bottom: 380px;
+    margin-bottom: 375px;
   }
   .promo__list-wrapper {
     display: flex;
@@ -123,14 +136,27 @@
 }
 
 @media #{$desktop-width} {
+  .promo {
+    &::after {
+      bottom: -5px;
+    }
+  }
   .promo__caption {
     padding: 0 225px;
+    margin-bottom: 356px;
     font-size: 53px;
     line-height: 57px;
   }
   .promo__list {
     width: 575px;
     padding-right: 250px;
-    min-height: 121px;
+    min-height: 118px;
+  }
+  .promo__list--interior svg {
+    top: 30px;
+  }
+  .promo__list--toy svg {
+    top: 30px;
+    right: 33px;
   }
 }

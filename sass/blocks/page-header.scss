@@ -101,6 +101,9 @@ background-color: $bg-color;
     padding-bottom: 0;
     margin-bottom: 70px;
   }
+  .page-header--margin {
+    margin-bottom: 0;
+  }
   .page-header__caption {
     position: relative;
     margin-top: 0;
@@ -133,7 +136,7 @@ background-color: $bg-color;
 
 @media #{$desktop-width} {
   .page-header {
-    margin-bottom: 140px;
+    margin-bottom: 0px;
   }
   .page-header__flex-wrap {
     padding-top: 0;

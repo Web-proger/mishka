@@ -75,7 +75,7 @@
   .contacts {
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 63px;
   }
   .contacts__caption {
     padding-left: 50px;
@@ -86,7 +86,7 @@
     position: absolute;
     width: 47px;
     height: 81px;
-    top: 55px;
+    top: 47px;
     right: 50px;
   }
   .contacts__table {
@@ -120,11 +120,12 @@
 
 @media #{$desktop-width} {
   .contacts {
-    padding-top: 197px;
+    padding-top: 147px;
     padding-left: 175px;
+    margin-bottom: 25px;
   }
   .contacts__icon-flag {
-    top: 190px;
+    top: 139px;
     left: 117px;
   }
   .contacts__table {
@@ -140,7 +141,7 @@
   }
   .contacts__map {
     position: absolute;
-    top: 125px;
+    top: 77px;
     right: 45px;
     margin-bottom: 0;
     width: 525px;
