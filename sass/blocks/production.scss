@@ -1,5 +1,4 @@
 .production {
-  outline: 1px solid blue; //Временно
   @include container;
   @include adapive-padding;
   position: relative;

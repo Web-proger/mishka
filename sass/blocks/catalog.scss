@@ -1,5 +1,4 @@
 .catalog {
-  outline: 1px solid blue; //Временно
   @include container;
   @include adapive-padding;
   display: flex;

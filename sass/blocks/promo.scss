@@ -31,6 +31,14 @@
     color: #97e2d2;
   }
 }
+.promo__list-wrapper {
+  a:hover {
+    color: #ffffff;
+  }
+  a:active {
+    color: #8dd5c9;
+  }
+}
 .promo__list svg {
   position: absolute;
 }
@@ -38,7 +46,7 @@
   width: 60%;
   display: inline-block;
 }
-.promo__list--interior{
+.promo__list--interior {
   background: #63d1bb;
   &:hover {
     background-color: #59d5bc;
@@ -46,21 +54,23 @@
   &:active {
     background-color: #59d5bc;
   }
-}
-.promo__list--interior svg{
-  top: 20px;
-  right: 35px;
-  width: 41px;
-  height: 62px;
-  fill: #149080;
-  opacity: 0.5;
-  &:hover {
+  svg {
+    top: 20px;
+    right: 35px;
+    width: 41px;
+    height: 62px;
+    fill: #149080;
+    opacity: 0.5;
+  }
+  &:hover svg {
     opacity: 0.7;
   }
-  &:active {
+
+  &:active svg{
     opacity: 0.3;
   }
 }
+
 .promo__list--toy {
   background-color: #56c3b2;
   &:hover {
@@ -69,21 +79,21 @@
   &:active {
     background-color: #46c1ae;
   }
-}
-.promo__list--toy svg {
+  svg {
     top: 18px;
     right: 25px;
     width: 61px;
     height: 61px;
     fill: #149080;
     opacity: 0.5;
-    &:hover {
-      opacity: 0.7;
-    }
-    &:active {
-      opacity: 0.3;
-    }
   }
+  &:hover svg {
+    opacity: 0.7;
+  }
+  &:active svg {
+    opacity: 0.3;
+  }
+}
 
 .promo__caption {
   @include main-caption;

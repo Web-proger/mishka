@@ -28,6 +28,13 @@
     height: 19px;
     top: 30px;
     left: 35px;
+    fill: #d3d2d2;
+  }
+  &:hover  svg{
+    fill: $decor-color;
+  }
+  &:active svg {
+    fill: #d0f1ea;
   }
 }
 .main-menu__item--cart {
@@ -39,6 +46,13 @@
     left: 33px;
     width: 21px;
     height: 19px;
+    fill: #d3d2d2;
+  }
+  &:hover svg{
+    fill: $decor-color;
+  }
+  &:active svg{
+    fill: #d0f1ea;
   }
 }
 .main-menu__item-link {
