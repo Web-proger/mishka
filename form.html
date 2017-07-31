@@ -133,13 +133,13 @@
             </label>
             <label class="order-form__label">
               <span class="order-form__span-full-name">Отчество</span>
-              <input type="text" class="order-form__input-full-name" placeholder="Отчество, если желаете" required>
+              <input type="text" class="order-form__input-full-name" placeholder="Отчество, если желаете">
             </label>
           </div>
           <div class="order-form__block order-form__block--phone order-form__block--bg-color">
             <div class="order-form__legend">Тел</div>
             <label class="order-form__label">
-              <input class="order-form__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+              <input class="order-form__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" pattern="(\+?\d[- .]*){7,13}" required>
               <svg><use xlink:href="#icon-phone"></use></svg>
             </label>
           </div>
