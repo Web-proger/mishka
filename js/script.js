@@ -2,9 +2,8 @@ var mainMenu = document.querySelector(".main-menu");
 var menuBtn = document.querySelector(".page-header__menu-btn");
 var carts = document.getElementsByClassName("cart-js");
 var modalCart = document.querySelector(".modal-cart");
-var modalCartBtn = modalCart.querySelector(".modal-cart__btn");
+var modalCartBtn = document.querySelector(".modal-cart__btn");
 var modalLayout = document.querySelector(".layout");
-
 
 mainMenu.classList.remove("main-menu--no-js");
 menuBtn.classList.remove("page-header__menu-btn--no-js");
@@ -35,10 +34,12 @@ for (var i=0; i < carts.length; i++) {
   })
 }
 
-modalLayout.addEventListener("click", function(event) {
-  modalCart.classList.remove("modal-cart--visible");
-  modalLayout.classList.remove("layout--visible");
-})
+if (modalLayout !== undefined) {
+  modalLayout.addEventListener("click", function(event) {
+    modalCart.classList.remove("modal-cart--visible");
+    modalLayout.classList.remove("layout--visible");
+  })
+}
 
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
